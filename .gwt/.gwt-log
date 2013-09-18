@@ -1,0 +1,2422 @@
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   30% complete (ETR: 10 seconds)
+   30% complete (ETR: 10 seconds)
+   30% complete (ETR: 10 seconds)
+   30% complete (ETR: 10 seconds)
+   40% complete (ETR: 8 seconds)
+   50% complete (ETR: 7 seconds)
+   60% complete (ETR: 5 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 13,52 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,04 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2744 units from cache.
+Compiling...
+   70% complete (ETR: 2 seconds)
+   70% complete (ETR: 2 seconds)
+   70% complete (ETR: 2 seconds)
+   70% complete (ETR: 2 seconds)
+   70% complete (ETR: 2 seconds)
+   70% complete (ETR: 2 seconds)
+   70% complete (ETR: 2 seconds)
+   70% complete (ETR: 2 seconds)
+   80% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 8,94 seconds
+Validating units:
+   [ERROR] Errors in 'file:/C:/Users/formation/workspace/tunisana-customer/customer-manager/src/test/java/tn/tunisiana/customer/client/CustomerServiceImplTest.java'
+      [ERROR] Line 12: No source code is available for type tn.tunisiana.customer.server.services.CustomerServiceImpl; did you forget to inherit a required module?
+      [ERROR] Line 18: No source code is available for type org.junit.Assert; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,09 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,03 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378889264663.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378889264663.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378889264663_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378889268221.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378889268221.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378889268221_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378889766967.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378889766967.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378889766967_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891831745.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891831745.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891831745_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891831847.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891831847.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891831847_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,06 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891937311.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891937311.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891937311_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891944482.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891944482.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891944482_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891973078.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891973078.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891973078_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891982909.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891982909.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378891982909_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892000487.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892000487.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892000487_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892002698.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892002698.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892002698_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892003276.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892003276.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892003276_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892005112.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892005112.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892005112_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892005846.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892005846.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892005846_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,03 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892007200.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892007200.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892007200_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892008213.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892008213.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892008213_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892025819.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892025819.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892025819_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892033839.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892033839.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892033839_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892048320.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892048320.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892048320_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892058354.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892058354.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892058354_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892077950.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892077950.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892077950_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892078032.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892078032.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892078032_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892091198.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892091198.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892091198_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892108278.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892108278.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892108278_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892120581.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892120581.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892120581_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892135696.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892135696.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892135696_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892141848.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892141848.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892141848_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892145013.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892145013.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892145013_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892154104.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892154104.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892154104_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,03 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892188004.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892188004.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892188004_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892198751.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892198751.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892198751_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892205660.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892205660.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892205660_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892212456.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892212456.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892212456_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892219057.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892219057.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892219057_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892227600.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892227600.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892227600_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892236337.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892236337.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892236337_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892243613.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892243613.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892243613_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892251326.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892251326.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892251326_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,04 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892263792.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892263792.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892263792_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892277204.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892277204.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892277204_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892277285.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892277285.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892277285_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,04 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892306354.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892306354.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892306354_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892309549.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892309549.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892309549_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892360856.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892360856.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892360856_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding com.google.gwt.user.client.ui.FormPanel.IFrameTemplate
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface com.google.gwt.user.client.ui.FormPanel.IFrameTemplate
+         Generating method body for get()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892364199.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892364199.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892364199_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892378148.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892378148.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892378148_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892380891.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892380891.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892380891_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892380973.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892380973.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892380973_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892389433.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892389433.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892389433_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892401730.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892401730.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892401730_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892404989.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892404989.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892404989_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892440742.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892440742.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892440742_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 2742 cached/archived units.  Used 2742 / 2744 units from cache.
+Compiling...
+   Compilation completed in 0,17 seconds
+Validating units:
+   [ERROR] Errors in 'file:/C:/Users/formation/workspace/tunisana-customer/customer-manager/src/test/java/tn/tunisiana/customer/client/CustomerServiceImplTest.java'
+      [ERROR] Line 12: No source code is available for type tn.tunisiana.customer.server.services.CustomerServiceImpl; did you forget to inherit a required module?
+      [ERROR] Line 18: No source code is available for type org.junit.Assert; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892450404.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892450404.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892450404_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 2743 cached/archived units.  Used 2743 / 2744 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Validating units:
+   [ERROR] Errors in 'file:/C:/Users/formation/workspace/tunisana-customer/customer-manager/src/test/java/tn/tunisiana/customer/client/CustomerServiceImplTest.java'
+      [ERROR] Line 12: No source code is available for type tn.tunisiana.customer.server.services.CustomerServiceImpl; did you forget to inherit a required module?
+      [ERROR] Line 18: No source code is available for type org.junit.Assert; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892533531_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 2743 cached/archived units.  Used 2743 / 2744 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Validating units:
+   [ERROR] Errors in 'file:/C:/Users/formation/workspace/tunisana-customer/customer-manager/src/test/java/tn/tunisiana/customer/client/CustomerServiceImplTest.java'
+      [ERROR] Line 12: No source code is available for type tn.tunisiana.customer.server.services.CustomerServiceImpl; did you forget to inherit a required module?
+      [ERROR] Line 18: No source code is available for type org.junit.Assert; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892557331_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 2744 cached/archived units.  Used 2744 / 2744 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Validating units:
+   [ERROR] Errors in 'file:/C:/Users/formation/workspace/tunisana-customer/customer-manager/src/test/java/tn/tunisiana/customer/client/CustomerServiceImplTest.java'
+      [ERROR] Line 12: No source code is available for type tn.tunisiana.customer.server.services.CustomerServiceImpl; did you forget to inherit a required module?
+      [ERROR] Line 18: No source code is available for type org.junit.Assert; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892607330.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892607330.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892607330_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892607945.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892607945.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892607945_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892978843.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892978843.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892978843_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892981347.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892981347.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378892981347_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 2743 cached/archived units.  Used 2743 / 2744 units from cache.
+Compiling...
+   Compilation completed in 0,01 seconds
+Validating units:
+   [ERROR] Errors in 'file:/C:/Users/formation/workspace/tunisana-customer/customer-manager/src/test/java/tn/tunisiana/customer/client/CustomerServiceImplTest.java'
+      [ERROR] Line 12: No source code is available for type tn.tunisiana.customer.server.services.CustomerServiceImpl; did you forget to inherit a required module?
+      [ERROR] Line 18: No source code is available for type org.junit.Assert; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      [ERROR] The markup in the document following the root element must be well-formed.
+      [ERROR] Error parsing XML (line 23): The markup in the document following the root element must be well-formed.
+[ERROR] Deferred binding failed for 'tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder'; expect subsequent failures
+Public resources found in...
+Translatable source found in...
+Found 2744 cached/archived units.  Used 2744 / 2744 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Validating units:
+   [ERROR] Errors in 'file:/C:/Users/formation/workspace/tunisana-customer/customer-manager/src/test/java/tn/tunisiana/customer/client/CustomerServiceImplTest.java'
+      [ERROR] Line 12: No source code is available for type tn.tunisiana.customer.server.services.CustomerServiceImpl; did you forget to inherit a required module?
+      [ERROR] Line 18: No source code is available for type org.junit.Assert; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893216017.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893216017.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893216017_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893216494.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893216494.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893216494_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893235452.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893235452.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893235452_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893238119.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893238119.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893238119_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893243734.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893243734.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893243734_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893250806.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893250806.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893250806_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893254407.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893254407.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893254407_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893269747.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893269747.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893269747_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893269909.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893269909.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893269909_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893272516.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893272516.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893272516_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893272604.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893272604.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893272604_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893282870.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893282870.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893282870_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893302142.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893302142.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893302142_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893456276.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893456276.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893456276_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893462751.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893462751.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893462751_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893464762.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893464762.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893464762_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893475442.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893475442.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893475442_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,04 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893477111.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893477111.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893477111_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893482497.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893482497.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893482497_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893527931.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893527931.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893527931_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893531134.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893531134.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893531134_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893541483.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893541483.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893541483_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893549742.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893549742.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893549742_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893552481.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893552481.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893552481_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893554373.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893554373.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893554373_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893560613.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893560613.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893560613_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893562919.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893562919.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893562919_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893565397.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893565397.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893565397_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893568252.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893568252.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893568252_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,03 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893570482.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893570482.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893570482_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893576190.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893576190.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893576190_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893709625.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893709625.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893709625_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893712444.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893712444.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893712444_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893715461.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893715461.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893715461_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm.CustomerFormUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893719326.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893719326.Template
+         Generating method body for html1()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,00 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.CustomerForm_CustomerFormUiBinderImpl_designTime1378893719326_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   50% complete (ETR: 5 seconds)
+   50% complete (ETR: 5 seconds)
+   50% complete (ETR: 5 seconds)
+   50% complete (ETR: 5 seconds)
+   50% complete (ETR: 5 seconds)
+   50% complete (ETR: 5 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 2 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 19,86 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2746 units from cache.
+Compiling...
+   Compilation completed in 0,26 seconds
+Validating units:
+   [ERROR] Errors in 'file:/C:/Users/formation/workspace/tunisana-customer/customer-manager/src/test/java/tn/tunisiana/customer/client/CustomerServiceImplTest.java'
+      [ERROR] Line 12: No source code is available for type tn.tunisiana.customer.server.services.CustomerServiceImpl; did you forget to inherit a required module?
+      [ERROR] Line 18: No source code is available for type org.junit.Assert; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.OfferBox.OfferBoxUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.OfferBox_OfferBoxUiBinderImpl_designTime1378906574926.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.OfferBox_OfferBoxUiBinderImpl_designTime1378906574926.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.OfferBox_OfferBoxUiBinderImpl_designTime1378906574926_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.OfferBox.OfferBoxUiBinder
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,02 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.OfferBox_OfferBoxUiBinderImpl_designTime1378906576442.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface tn.tunisiana.customer.client.views.OfferBox_OfferBoxUiBinderImpl_designTime1378906576442.Template
+         Generating method body for html1()
+         Generating method body for html2()
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Rebinding tn.tunisiana.customer.client.views.OfferBox_OfferBoxUiBinderImpl_designTime1378906576442_GenBundle
+   Adding '1' new generated units
+      Compiling...
+         Compilation completed in 0,01 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   20% complete (ETR: 13 seconds)
+   20% complete (ETR: 13 seconds)
+   20% complete (ETR: 13 seconds)
+   30% complete (ETR: 12 seconds)
+   40% complete (ETR: 9 seconds)
+   50% complete (ETR: 6 seconds)
+   60% complete (ETR: 5 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 44,43 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   10% complete (ETR: 22 seconds)
+   10% complete (ETR: 22 seconds)
+   20% complete (ETR: 21 seconds)
+   30% complete (ETR: 16 seconds)
+   40% complete (ETR: 12 seconds)
+   50% complete (ETR: 8 seconds)
+   60% complete (ETR: 6 seconds)
+   70% complete (ETR: 4 seconds)
+   80% complete (ETR: 3 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 42,62 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   30% complete (ETR: 10 seconds)
+   30% complete (ETR: 10 seconds)
+   30% complete (ETR: 10 seconds)
+   30% complete (ETR: 10 seconds)
+   40% complete (ETR: 9 seconds)
+   50% complete (ETR: 6 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 11,96 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   20% complete (ETR: 14 seconds)
+   20% complete (ETR: 14 seconds)
+   20% complete (ETR: 14 seconds)
+   30% complete (ETR: 12 seconds)
+   40% complete (ETR: 9 seconds)
+   50% complete (ETR: 7 seconds)
+   60% complete (ETR: 5 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 13,58 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   30% complete (ETR: 10 seconds)
+   30% complete (ETR: 10 seconds)
+   30% complete (ETR: 10 seconds)
+   30% complete (ETR: 10 seconds)
+   40% complete (ETR: 8 seconds)
+   50% complete (ETR: 6 seconds)
+   60% complete (ETR: 5 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 39,32 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   50% complete (ETR: 5 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 16,67 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   50% complete (ETR: 6 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 11,30 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   50% complete (ETR: 5 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 16,63 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   50% complete (ETR: 5 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 11,04 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2719 units from cache.
+Compiling...
+   40% complete (ETR: 7 seconds)
+   40% complete (ETR: 7 seconds)
+   40% complete (ETR: 7 seconds)
+   40% complete (ETR: 7 seconds)
+   40% complete (ETR: 7 seconds)
+   50% complete (ETR: 5 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 11,44 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 2719 cached/archived units.  Used 2719 / 2719 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes

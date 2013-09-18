@@ -1,0 +1,2 @@
+# Module tn.tunisiana.customer.CustomerManagerJUnit
+# RPC service class, partial path of RPC policy file

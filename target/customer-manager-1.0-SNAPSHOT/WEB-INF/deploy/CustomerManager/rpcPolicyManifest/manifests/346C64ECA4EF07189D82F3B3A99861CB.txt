@@ -1,0 +1,2 @@
+serviceClass: tn.tunisiana.customer.client.GreetingService
+path: 2D192FA4E6BFF4F14D187B2AAA6CBF38.gwt.rpc

@@ -1,0 +1,2 @@
+serviceClass: tn.tunisiana.customer.client.services.CustomerManagerService
+path: A854915883C6B58344322F6BE988F65C.gwt.rpc

@@ -1,0 +1,22 @@
+{
+   "destination_addresses" : [ "Tunis, Tunisie" ],
+   "origin_addresses" : [ "Ben Arous, Tunisie" ],
+   "rows" : [
+      {
+         "elements" : [
+            {
+               "distance" : {
+                  "text" : "27,5 km",
+                  "value" : 27515
+               },
+               "duration" : {
+                  "text" : "30 minutes",
+                  "value" : 1774
+               },
+               "status" : "OK"
+            }
+         ]
+      }
+   ],
+   "status" : "OK"
+}

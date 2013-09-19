@@ -43,8 +43,9 @@ public class GeoCalculator {
 			FileOutputStream fop = new FileOutputStream(json);
 			fop.write(resp.getBytes());
 			fop.close();
+		
 			rootNode = m.readTree(json);
-
+			json.delete();
 			JsonNode distanceNode = ((rootNode.path("rows"))
 					.findValues("elements").get(0)).findValue("distance").get(
 					"value");

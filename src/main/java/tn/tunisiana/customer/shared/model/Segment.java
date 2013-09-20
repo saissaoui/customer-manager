@@ -1,12 +1,13 @@
 package tn.tunisiana.customer.shared.model;
 
 import java.util.Hashtable;
+import java.util.List;
 
 public class Segment {
 
 	private int idSegment;
 	private String critere;
-	private Hashtable<String, Offer> correspondances;
+	private Hashtable<List<String>, Integer> correspondances;
 
 	public int getIdSegment() {
 		return idSegment;
@@ -24,11 +25,12 @@ public class Segment {
 		this.critere = critere;
 	}
 
-	public Hashtable<String, Offer> getCorrespondances() {
+	public Hashtable<List<String>, Integer> getCorrespondances() {
 		return correspondances;
 	}
 
-	public void setCorrespondances(Hashtable<String, Offer> correspondances) {
+	public void setCorrespondances(
+			Hashtable<List<String>, Integer> correspondances) {
 		this.correspondances = correspondances;
 	}
 

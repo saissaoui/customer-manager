@@ -2,7 +2,9 @@ package tn.tunisiana.customer.client;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.List;
 
 import org.junit.Test;
 
@@ -15,7 +17,7 @@ public class PropertiesManagerTest {
 	@Test
 	public void testReadSegment() {
 
-		Hashtable<String, Integer> coresp = PropertiesManager.readSegment(1);
+		Hashtable<List<String>, Integer> coresp = PropertiesManager.readSegment(3);
 
 		assertNotNull(coresp);
 		assertTrue(coresp.size() > 0);
@@ -32,10 +34,14 @@ public class PropertiesManagerTest {
 
 		offer.setIdoffer(1);
 		offer2.setIdoffer(2);
-		Hashtable<String, Offer> coresp = new Hashtable<String, Offer>();
+		Hashtable<List<String>, Integer> coresp = new Hashtable<List<String>, Integer>();
 
-		coresp.put("50", offer);
-		coresp.put("100", offer2);
+		List<String> list = new ArrayList<String>();
+		
+		list.add( ">100");
+		list.add( "<200");
+		coresp.put(list, offer.getIdoffer());
+		
 		segment.setCorrespondances(coresp);
 		PropertiesManager.writeSegment(segment);
 		assertTrue(true);

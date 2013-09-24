@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<segment critere="distance" id="2">
+    <correspondances>
+        <correspondance conditions="&gt;40" offre="1"/>
+        <correspondance conditions="&gt;20|&lt;40" offre="2"/>
+    </correspondances>
+</segment>

@@ -1,14 +1,23 @@
 package tn.tunisiana.customer.shared.model;
 
-import java.util.Hashtable;
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlElements;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "segment")
 public class Segment {
 
 	private int idSegment;
-	private String critere;
-	private Hashtable<List<String>, Integer> correspondances;
 
+	private String critere;
+
+	private List<Correspondance> correspondances;
+
+	@XmlAttribute(name = "id")
 	public int getIdSegment() {
 		return idSegment;
 	}
@@ -17,6 +26,7 @@ public class Segment {
 		this.idSegment = idSegment;
 	}
 
+	@XmlAttribute
 	public String getCritere() {
 		return critere;
 	}
@@ -25,12 +35,13 @@ public class Segment {
 		this.critere = critere;
 	}
 
-	public Hashtable<List<String>, Integer> getCorrespondances() {
+	@XmlElementWrapper
+	@XmlElements(value = { @XmlElement(name = "correspondance", type = Correspondance.class) })
+	public List<Correspondance> getCorrespondances() {
 		return correspondances;
 	}
 
-	public void setCorrespondances(
-			Hashtable<List<String>, Integer> correspondances) {
+	public void setCorrespondances(List<Correspondance> correspondances) {
 		this.correspondances = correspondances;
 	}
 

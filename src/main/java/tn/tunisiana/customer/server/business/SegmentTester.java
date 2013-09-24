@@ -7,6 +7,7 @@ import java.util.List;
 
 import bsh.EvalError;
 import bsh.Interpreter;
+import tn.tunisiana.customer.shared.model.Correspondance;
 import tn.tunisiana.customer.shared.model.Customer;
 import tn.tunisiana.customer.shared.model.Segment;
 
@@ -27,24 +28,27 @@ public class SegmentTester {
 					getCritereValue = customer.getClass().getMethod(
 							"get" + segment.getCritere());
 					interpreter.set("critereValue",
-							getCritereValue.invoke(customer).toString());
+							Integer.parseInt(getCritereValue.invoke(customer).toString()));
 
 					String expression = "( ";
-					for (List<String> conditions : segment.getCorrespondances()
-							.keySet()) {
-						for (String condition : conditions)
-							expression += "(critereValue " + condition + ") &";
 
-						if (expression.endsWith("&"))
-							expression += "true)";
+					for (Correspondance corresp : segment.getCorrespondances()) {
+						for (String condition : corresp.getConditions().split(
+								"/")) {
+							expression += "(critereValue " + condition + ") && ";
+
+							
+						}
+						if (expression.endsWith("&& "))
+							expression = expression.substring(0, expression.length()-3);
+							expression+=")";
 
 						interpreter.eval("isOk = " + expression);
 
 						boolean isOk = (Boolean) interpreter.get("isOk");
 
 						if (isOk)
-							offers.add(segment.getCorrespondances().get(
-									conditions));
+							offers.add(corresp.getIdOffre());
 
 						expression = "( ";
 					}

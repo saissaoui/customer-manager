@@ -17,7 +17,7 @@ import tn.tunisiana.customer.shared.model.Segment;
 
 public class TestJaxb {
 
-	@Test
+	//@Test
 	public void test() {
 
 		File file = new File("segments/segment1.xml");

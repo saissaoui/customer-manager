@@ -13,5 +13,6 @@
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="show_sql">true</property>
 		<mapping class="tn.tunisiana.customer.shared.model.Customer" />
+		<mapping class="tn.tunisiana.customer.shared.model.Offer" />
 	</session-factory>
 </hibernate-configuration>

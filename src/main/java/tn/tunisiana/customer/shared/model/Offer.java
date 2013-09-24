@@ -1,7 +1,6 @@
 package tn.tunisiana.customer.shared.model;
 
-// default package
-// Generated Sep 16, 2013 4:02:27 PM by Hibernate Tools 4.0.0
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,6 +14,10 @@ import javax.persistence.Table;
 @Table(name = "offer", catalog = "tunisianaDb")
 public class Offer implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int idoffer;
 	private String offerName;
 	private String description;

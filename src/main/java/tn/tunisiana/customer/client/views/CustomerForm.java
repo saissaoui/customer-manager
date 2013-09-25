@@ -1,7 +1,12 @@
 package tn.tunisiana.customer.client.views;
 
+import java.util.List;
+
 import tn.tunisiana.customer.client.services.CustomerManagerService;
 import tn.tunisiana.customer.client.services.CustomerManagerServiceAsync;
+import tn.tunisiana.customer.client.services.IOfferManagerService;
+import tn.tunisiana.customer.client.services.IOfferManagerServiceAsync;
+import tn.tunisiana.customer.shared.model.Customer;
 import tn.tunisiana.customer.shared.model.Offer;
 
 import com.google.gwt.core.client.GWT;
@@ -20,6 +25,8 @@ public class CustomerForm extends Composite implements HasText {
 
 	private final CustomerManagerServiceAsync custoSrv = GWT
 			.create(CustomerManagerService.class);
+	private final IOfferManagerServiceAsync offerService = GWT
+			.create(IOfferManagerService.class);
 	private static CustomerFormUiBinder uiBinder = GWT
 			.create(CustomerFormUiBinder.class);
 
@@ -52,28 +59,43 @@ public class CustomerForm extends Composite implements HasText {
 	}
 
 	private void evaluateCustomer() {
+		Customer customer = new Customer();
+		customer.setAge(30);
 
-		custoSrv.getOffer(new AsyncCallback<Offer>() {
-			public void onFailure(Throwable caught) {
-				// Show the RPC error message to the user
-				// dialogBox.setText("Remote Procedure Call - Failure");
-				// serverResponseLabel.addStyleName("serverResponseLabelError");
-				// serverResponseLabel.setHTML(SERVER_ERROR);
-				// dialogBox.center();
-				// closeButton.setFocus(true);
-				System.out.println("failure");
+		offerService.getOffersFor(customer, new AsyncCallback<List<Offer>>() {
+
+			public void onSuccess(List<Offer> offres) {
+				System.out.println("nombre offres " + offres.size());
+
 			}
 
-			public void onSuccess(Offer result) {
-				// dialogBox.setText("Remote Procedure Call");
-				// serverResponseLabel.removeStyleName("serverResponseLabelError");
-				// serverResponseLabel.setHTML(result);
-				// dialogBox.center();
-				// closeButton.setFocus(true);
-				OfferBox ob = new OfferBox(result);
-				ob.getDialogBox().show();
+			public void onFailure(Throwable arg0) {
+				System.out.println("failure");
 
 			}
 		});
+
+//		custoSrv.getOffer(new AsyncCallback<Offer>() {
+//			public void onFailure(Throwable caught) {
+//				// Show the RPC error message to the user
+//				// dialogBox.setText("Remote Procedure Call - Failure");
+//				// serverResponseLabel.addStyleName("serverResponseLabelError");
+//				// serverResponseLabel.setHTML(SERVER_ERROR);
+//				// dialogBox.center();
+//				// closeButton.setFocus(true);
+//				System.out.println("failure");
+//			}
+//
+//			public void onSuccess(Offer result) {
+//				// dialogBox.setText("Remote Procedure Call");
+//				// serverResponseLabel.removeStyleName("serverResponseLabelError");
+//				// serverResponseLabel.setHTML(result);
+//				// dialogBox.center();
+//				// closeButton.setFocus(true);
+//				OfferBox ob = new OfferBox(result);
+//				ob.getDialogBox().show();
+//
+//			}
+//		});
 	}
 }

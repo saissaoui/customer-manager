@@ -1,32 +1,51 @@
 package tn.tunisiana.customer.server.services;
 
+import java.util.ArrayList;
 import java.util.List;
-
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 import tn.tunisiana.customer.client.services.IOfferManagerService;
 import tn.tunisiana.customer.server.business.SegmentTester;
 import tn.tunisiana.customer.server.dao.impl.OfferDaoImpl;
-import tn.tunisiana.customer.shared.model.Customer;
-import tn.tunisiana.customer.shared.model.Offer;
+import tn.tunisiana.customer.server.model.Customer;
+import tn.tunisiana.customer.server.model.Offer;
+import tn.tunisiana.customer.shared.model.CustomerDto;
+import tn.tunisiana.customer.shared.model.OfferDto;
+import tn.tunisiana.customer.util.SegmentsFileManager;
 
-public class OfferManagerServiceImpl extends RemoteServiceServlet implements IOfferManagerService {
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+
+public class OfferManagerServiceImpl extends RemoteServiceServlet implements
+		IOfferManagerService {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 597013903416774611L;
 	private SegmentTester segTester = new SegmentTester();
+	private SegmentsFileManager segFileMan = new SegmentsFileManager();
 	private OfferDaoImpl odi = new OfferDaoImpl();
 
-	public List<Offer> getOffersFor(Customer customer) {
+	public List<OfferDto> getOffersFor(CustomerDto customer) {
 
-		List<Integer> offers = segTester.defineOffers(customer);
+		if (segTester.getSegments() == null)
+			segTester.setSegments(segFileMan.getAllSegments());
+		List<Integer> offers = segTester.defineOffers(new Customer(customer));
+		List<OfferDto> offerDtos = new ArrayList<OfferDto>();
+		if (offers.size() != 0) {
+			for (Offer offer : odi.listOffers(offers))
+				
+				
+				offerDtos.add(createOfferDto(offer));
 
-		if (offers.size() != 0)
-			return odi.listOffers(offers);
-		else
+			return offerDtos;
+		} else
 			return null;
+	}
+
+	OfferDto createOfferDto(Offer offer) {
+		return new OfferDto(offer.getIdoffer(), offer.getOfferName(),
+				offer.getDescription());
+
 	}
 
 }

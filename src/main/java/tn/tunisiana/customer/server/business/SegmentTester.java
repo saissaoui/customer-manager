@@ -7,9 +7,9 @@ import java.util.List;
 
 import bsh.EvalError;
 import bsh.Interpreter;
-import tn.tunisiana.customer.shared.model.Correspondance;
-import tn.tunisiana.customer.shared.model.Customer;
-import tn.tunisiana.customer.shared.model.Segment;
+import tn.tunisiana.customer.server.model.Correspondance;
+import tn.tunisiana.customer.server.model.Customer;
+import tn.tunisiana.customer.server.model.Segment;
 
 public class SegmentTester {
 

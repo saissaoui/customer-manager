@@ -41,7 +41,7 @@ public class OfferDaoImplTest {
 		fail("Not yet implemented");
 	}
 
-	//@Test
+	@Test
 	public void testListOffers() {
 
 		List<Integer> offers = new ArrayList<Integer>();

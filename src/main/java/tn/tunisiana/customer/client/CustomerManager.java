@@ -1,6 +1,6 @@
 package tn.tunisiana.customer.client;
 
-import tn.tunisiana.customer.client.services.CustomerManagerService;
+//import tn.tunisiana.customer.client.services.CustomerManagerService;
 import tn.tunisiana.customer.client.services.CustomerManagerServiceAsync;
 import tn.tunisiana.customer.client.views.CustomerForm;
 import tn.tunisiana.customer.shared.FieldVerifier;

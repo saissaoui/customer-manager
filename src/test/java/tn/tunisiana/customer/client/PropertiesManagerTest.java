@@ -8,8 +8,8 @@ import java.util.List;
 
 import org.junit.Test;
 
-import tn.tunisiana.customer.shared.model.Offer;
-import tn.tunisiana.customer.shared.model.Segment;
+import tn.tunisiana.customer.server.model.Offer;
+import tn.tunisiana.customer.server.model.Segment;
 import tn.tunisiana.customer.util.PropertiesManager;
 
 public class PropertiesManagerTest {

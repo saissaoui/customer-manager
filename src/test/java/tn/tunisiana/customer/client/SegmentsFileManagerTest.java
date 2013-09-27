@@ -6,7 +6,7 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
-import tn.tunisiana.customer.shared.model.Segment;
+import tn.tunisiana.customer.server.model.Segment;
 import tn.tunisiana.customer.util.SegmentsFileManager;
 
 public class SegmentsFileManagerTest {
@@ -18,16 +18,16 @@ public class SegmentsFileManagerTest {
 		sfm = new SegmentsFileManager();
 	}
 
-	// @Test
+	@Test
 	public void testReadSegment() {
-		segment = sfm.readSegment(1);
-		assertTrue(segment.getIdSegment() == 1);
+
+		// assertTrue(sfm.getAllSegments().size() == 2);
 	}
 
 	@Test
 	public void testSaveSegment() {
-		Segment segment = sfm.readSegment(1);
-		segment.setIdSegment(2);
+		segment = new Segment();
+		segment.setIdSegment(23);
 		sfm.saveSegment(segment);
 
 	}

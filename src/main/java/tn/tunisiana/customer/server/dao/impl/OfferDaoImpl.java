@@ -6,7 +6,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 
 import tn.tunisiana.customer.server.dao.IOfferDao;
-import tn.tunisiana.customer.shared.model.Offer;
+import tn.tunisiana.customer.server.model.Offer;
 import tn.tunisiana.customer.util.HibernateUtil;
 
 public class OfferDaoImpl implements IOfferDao {

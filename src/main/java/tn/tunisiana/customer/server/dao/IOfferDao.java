@@ -2,7 +2,7 @@ package tn.tunisiana.customer.server.dao;
 
 import java.util.List;
 
-import tn.tunisiana.customer.shared.model.Offer;
+import tn.tunisiana.customer.server.model.Offer;
 
 public interface IOfferDao {
 

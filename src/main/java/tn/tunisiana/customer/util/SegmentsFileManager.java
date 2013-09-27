@@ -1,13 +1,15 @@
 package tn.tunisiana.customer.util;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-import tn.tunisiana.customer.shared.model.Segment;
+import tn.tunisiana.customer.server.model.Segment;
 
 public class SegmentsFileManager {
 
@@ -23,24 +25,40 @@ public class SegmentsFileManager {
 
 	}
 
-	public Segment readSegment(int segmentId) {
+	public Segment readSegment(File segFile) {
 
 		Segment segment = null;
-		File file = new File("segments/" + segmentId + ".xml");
 
 		try {
 			Unmarshaller jaxbUnmarshaller;
 			jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-			segment = (Segment) jaxbUnmarshaller.unmarshal(file);
+			segment = (Segment) jaxbUnmarshaller.unmarshal(segFile);
 
 		} catch (JAXBException e) {
 
-			e.printStackTrace();
+			System.out.println("format fichier inconnu");
 
 		}
 
 		return segment;
 
+	}
+
+	public List<Segment> getAllSegments() {
+
+		File rep = new File("segments");
+
+		if (rep.isDirectory()) {
+			File[] seFiles = rep.listFiles();
+
+			List<Segment> segments = new ArrayList<Segment>();
+
+			for (File file : seFiles)
+				segments.add(readSegment(file));
+
+			return segments;
+		} else
+			return null;
 	}
 
 	public void saveSegment(Segment segment) {

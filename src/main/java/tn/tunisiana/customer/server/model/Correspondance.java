@@ -1,9 +1,6 @@
-package tn.tunisiana.customer.shared.model;
-
-import java.util.List;
+package tn.tunisiana.customer.server.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
 
 public class Correspondance {
 

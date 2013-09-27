@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.Properties;
 
-import tn.tunisiana.customer.shared.model.Segment;
+import tn.tunisiana.customer.server.model.Segment;
 
 public class PropertiesManager {
 //	static Properties properties = new Properties();

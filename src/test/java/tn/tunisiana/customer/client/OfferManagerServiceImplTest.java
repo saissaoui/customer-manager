@@ -1,13 +1,13 @@
 package tn.tunisiana.customer.client;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import tn.tunisiana.customer.client.services.IOfferManagerService;
 import tn.tunisiana.customer.server.services.OfferManagerServiceImpl;
-import tn.tunisiana.customer.shared.model.Customer;
+import tn.tunisiana.customer.shared.model.CustomerDto;
 
 public class OfferManagerServiceImplTest {
 
@@ -19,7 +19,7 @@ public class OfferManagerServiceImplTest {
 	public void test() {
 
 		IOfferManagerService oms = new OfferManagerServiceImpl();
-		Customer customer = new Customer();
+		CustomerDto customer = new CustomerDto();
 		customer.setAge(30);
 
 		assertTrue(oms.getOffersFor(customer).size() != 0);

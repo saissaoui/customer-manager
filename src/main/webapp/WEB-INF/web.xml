@@ -10,10 +10,10 @@
 		<servlet-name>greetServlet</servlet-name>
 		<servlet-class>tn.tunisiana.customer.server.GreetingServiceImpl</servlet-class>
 	</servlet>
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>customerManServlet</servlet-name>
 		<servlet-class>tn.tunisiana.customer.server.services.CustomerServiceImpl</servlet-class>
-	</servlet>
+	</servlet> -->
 	<servlet>
 		<servlet-name>offerManServlet</servlet-name>
 		<servlet-class>tn.tunisiana.customer.server.services.OfferManagerServiceImpl</servlet-class>
@@ -22,10 +22,10 @@
 		<servlet-name>greetServlet</servlet-name>
 		<url-pattern>/CustomerManager/greet</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
+	<!-- <servlet-mapping>
 		<servlet-name>customerManServlet</servlet-name>
 		<url-pattern>/CustomerManager/cManagerService</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	<servlet-mapping>
 		<servlet-name>offerManServlet</servlet-name>
 		<url-pattern>/CustomerManager/oManagerService</url-pattern>

@@ -1,4 +1,4 @@
-package tn.tunisiana.customer.shared.model;
+package tn.tunisiana.customer.server.model;
 
 import java.util.List;
 

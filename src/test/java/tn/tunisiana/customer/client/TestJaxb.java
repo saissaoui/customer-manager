@@ -13,7 +13,7 @@ import javax.xml.bind.Unmarshaller;
 
 import org.junit.Test;
 
-import tn.tunisiana.customer.shared.model.Segment;
+import tn.tunisiana.customer.server.model.Segment;
 
 public class TestJaxb {
 

@@ -1,7 +1,7 @@
 package tn.tunisiana.customer.client.services;
 
-import tn.tunisiana.customer.shared.model.Customer;
-import tn.tunisiana.customer.shared.model.Offer;
+import tn.tunisiana.customer.server.model.Customer;
+import tn.tunisiana.customer.server.model.Offer;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
 

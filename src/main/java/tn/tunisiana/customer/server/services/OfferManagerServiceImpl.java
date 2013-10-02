@@ -10,6 +10,7 @@ import tn.tunisiana.customer.server.model.Customer;
 import tn.tunisiana.customer.server.model.Offer;
 import tn.tunisiana.customer.shared.model.CustomerDto;
 import tn.tunisiana.customer.shared.model.OfferDto;
+import tn.tunisiana.customer.util.GeoCalculator;
 import tn.tunisiana.customer.util.SegmentsFileManager;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
@@ -26,6 +27,11 @@ public class OfferManagerServiceImpl extends RemoteServiceServlet implements
 	private OfferDaoImpl odi = new OfferDaoImpl();
 
 	public List<OfferDto> getOffersFor(CustomerDto customer) {
+		
+		GeoCalculator gc = new GeoCalculator();
+		long distance = gc.distance(
+				customer.getGouvernoratUtilisateur(), "Tunis");
+		customer.setDistance(distance);
 
 		if (segTester.getSegments() == null)
 			segTester.setSegments(segFileMan.getAllSegments());
@@ -33,8 +39,7 @@ public class OfferManagerServiceImpl extends RemoteServiceServlet implements
 		List<OfferDto> offerDtos = new ArrayList<OfferDto>();
 		if (offers.size() != 0) {
 			for (Offer offer : odi.listOffers(offers))
-				
-				
+
 				offerDtos.add(createOfferDto(offer));
 
 			return offerDtos;

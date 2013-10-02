@@ -3,7 +3,7 @@ package tn.tunisiana.customer.shared.model;
 import java.io.Serializable;
 import java.util.Date;
 
-public class CustomerDto implements Serializable{
+public class CustomerDto implements Serializable {
 
 	private Integer idcustomer;
 	private String name;
@@ -33,6 +33,16 @@ public class CustomerDto implements Serializable{
 	private String achatAccompagne;
 	private String accompagnant;
 	private String raisonChoix;
+
+	private long distance;
+
+	public long getDistance() {
+		return distance;
+	}
+
+	public void setDistance(long distance2) {
+		this.distance = distance2;
+	}
 
 	public Integer getIdcustomer() {
 		return idcustomer;

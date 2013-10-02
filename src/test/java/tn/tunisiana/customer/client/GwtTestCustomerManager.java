@@ -110,6 +110,8 @@ public class GwtTestCustomerManager extends GWTTestCase {
 
 			public void onSuccess(List<OfferDto> result) {
 				System.out.println(result.size());
+				for (OfferDto offer : result)
+					System.out.println(offer.getOfferName());
 				assertTrue(result != null);
 
 			}

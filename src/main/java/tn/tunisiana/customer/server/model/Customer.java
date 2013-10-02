@@ -52,6 +52,16 @@ public class Customer implements java.io.Serializable {
 	private String accompagnant;
 	private String raisonChoix;
 
+	private int distance;
+	
+	public int getDistance() {
+		return distance;
+	}
+
+	public void setDistance(int distance) {
+		this.distance = distance;
+	}
+
 	public Customer() {
 	}
 	

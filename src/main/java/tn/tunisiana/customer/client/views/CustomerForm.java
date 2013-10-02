@@ -5,8 +5,10 @@ import java.util.List;
 
 import tn.tunisiana.customer.client.services.IOfferManagerService;
 import tn.tunisiana.customer.client.services.IOfferManagerServiceAsync;
+import tn.tunisiana.customer.client.views.customui.DatePickerWithYearSelector;
 import tn.tunisiana.customer.shared.model.CustomerDto;
 import tn.tunisiana.customer.shared.model.OfferDto;
+import tn.tunisiana.customer.util.GeoCalculator;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -18,9 +20,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasText;
 import com.google.gwt.user.client.ui.Widget;
-import com.google.gwt.user.datepicker.client.DatePicker;
 //import tn.tunisiana.customer.client.services.CustomerManagerService;
-import com.sun.org.apache.xerces.internal.impl.dv.xs.YearDV;
 
 public class CustomerForm extends Composite implements HasText {
 
@@ -28,7 +28,7 @@ public class CustomerForm extends Composite implements HasText {
 	Button button;
 
 	@UiField
-	DatePicker birthday;
+	DatePickerWithYearSelector birthday;
 
 	// private final CustomerManagerServiceAsync custoSrv = GWT
 	// .create(CustomerManagerService.class);
@@ -42,6 +42,7 @@ public class CustomerForm extends Composite implements HasText {
 
 	public CustomerForm() {
 		initWidget(uiBinder.createAndBindUi(this));
+		//birthday = new DatePickerWithYearSelector();
 	}
 
 	public CustomerForm(String firstName) {
@@ -64,8 +65,11 @@ public class CustomerForm extends Composite implements HasText {
 
 	private void evaluateCustomer() {
 		CustomerDto customer = new CustomerDto();
-		customer.setAge(calculateAge());
+		int age = calculateAge();
+		customer.setAge(age);
 
+	
+		
 		offerService.getOffersFor(customer,
 				new AsyncCallback<List<OfferDto>>() {
 
@@ -115,7 +119,7 @@ public class CustomerForm extends Composite implements HasText {
 
 		Date now = new Date();
 		int nowMonth = now.getMonth() + 1;
-		int nowYear = now.getYear() + 1900;
+		int nowYear = now.getYear() ;
 		int result = nowYear - year;
 
 		if (month > nowMonth) {

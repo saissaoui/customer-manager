@@ -1,6 +1,8 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.datepicker.client">
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.datepicker.client"
+	xmlns:cus="urn:import:tn.tunisiana.customer.client.views.customui"
+	>
 	<ui:style src="styles/CustomerManager.css">
 		.important {
 			font-weight: bold;
@@ -13,7 +15,8 @@
 		<g:Label text="Prénom" width="120px"/>
 		<g:TextBox/>
 		<g:Label text="Date de naissance" width="120px"/>
-		<p1:DatePicker ui:field="birthday" width="142px" height="43px"/>
+	<!-- 	<p1:DatePicker ui:field="birthday" width="142px" height="43px"/> -->
+		<cus:DatePickerWithYearSelector ui:field="birthday" width="142px" height="43px"/>
 		<g:Label text="Adresse" width="121px"/>
 		<g:TextBox/>
 		<g:Label text="Ville" width="121px"/>

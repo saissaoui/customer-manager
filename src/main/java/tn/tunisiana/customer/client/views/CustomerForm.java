@@ -8,7 +8,6 @@ import tn.tunisiana.customer.client.services.IOfferManagerServiceAsync;
 import tn.tunisiana.customer.client.views.customui.DatePickerWithYearSelector;
 import tn.tunisiana.customer.shared.model.CustomerDto;
 import tn.tunisiana.customer.shared.model.OfferDto;
-import tn.tunisiana.customer.util.GeoCalculator;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -19,7 +18,10 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasText;
+import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
+
 //import tn.tunisiana.customer.client.services.CustomerManagerService;
 
 public class CustomerForm extends Composite implements HasText {
@@ -29,6 +31,47 @@ public class CustomerForm extends Composite implements HasText {
 
 	@UiField
 	DatePickerWithYearSelector birthday;
+	@UiField
+	TextBox nom;
+	@UiField
+	TextBox prenom;
+	@UiField
+	TextBox nationalite;
+	@UiField
+	TextBox tel;
+	@UiField
+	TextBox email;
+	@UiField
+	TextBox numId;
+	@UiField
+	TextBox adresse;
+	@UiField
+	TextBox ville;
+	@UiField
+	TextBox postcode;
+	@UiField
+	ListBox gouvernorat;
+	@UiField
+	TextBox autreProfession;
+
+	@UiField
+	TextBox nomUtilisateur;
+	@UiField
+	TextBox prenomUtilisateur;
+	@UiField
+	TextBox nationaliteUtilisateur;
+	@UiField
+	TextBox adresseUtilisateur;
+	@UiField
+	TextBox villeUtilisateur;
+	@UiField
+	TextBox postCodeUtilisateur;
+	@UiField
+	ListBox gouvernoratUtilisateur;
+	@UiField
+	TextBox AutreRaison;
+	@UiField
+	ListBox operateur;
 
 	// private final CustomerManagerServiceAsync custoSrv = GWT
 	// .create(CustomerManagerService.class);
@@ -42,7 +85,7 @@ public class CustomerForm extends Composite implements HasText {
 
 	public CustomerForm() {
 		initWidget(uiBinder.createAndBindUi(this));
-		//birthday = new DatePickerWithYearSelector();
+		// birthday = new DatePickerWithYearSelector();
 	}
 
 	public CustomerForm(String firstName) {
@@ -64,13 +107,8 @@ public class CustomerForm extends Composite implements HasText {
 	}
 
 	private void evaluateCustomer() {
-		CustomerDto customer = new CustomerDto();
-		int age = calculateAge();
-		customer.setAge(age);
 
-	
-		
-		offerService.getOffersFor(customer,
+		offerService.getOffersFor(createCustomer(),
 				new AsyncCallback<List<OfferDto>>() {
 
 					public void onSuccess(List<OfferDto> offres) {
@@ -119,7 +157,7 @@ public class CustomerForm extends Composite implements HasText {
 
 		Date now = new Date();
 		int nowMonth = now.getMonth() + 1;
-		int nowYear = now.getYear() ;
+		int nowYear = now.getYear();
 		int result = nowYear - year;
 
 		if (month > nowMonth) {
@@ -132,5 +170,14 @@ public class CustomerForm extends Composite implements HasText {
 			}
 		}
 		return result;
+	}
+
+	private CustomerDto createCustomer() {
+
+		CustomerDto customer = new CustomerDto();
+		int age = calculateAge();
+		customer.setAge(age);
+
+		return customer;
 	}
 }

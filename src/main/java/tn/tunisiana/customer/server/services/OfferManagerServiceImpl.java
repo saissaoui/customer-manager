@@ -11,6 +11,7 @@ import tn.tunisiana.customer.server.model.Offer;
 import tn.tunisiana.customer.shared.model.CustomerDto;
 import tn.tunisiana.customer.shared.model.OfferDto;
 import tn.tunisiana.customer.util.GeoCalculator;
+import tn.tunisiana.customer.util.GlobalConf;
 import tn.tunisiana.customer.util.SegmentsFileManager;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
@@ -30,7 +31,7 @@ public class OfferManagerServiceImpl extends RemoteServiceServlet implements
 		
 		GeoCalculator gc = new GeoCalculator();
 		long distance = gc.distance(
-				customer.getGouvernoratUtilisateur(), "Tunis");
+				customer.getGouvernorat(), GlobalConf.getLocalisation());
 		customer.setDistance(distance);
 
 		if (segTester.getSegments() == null)

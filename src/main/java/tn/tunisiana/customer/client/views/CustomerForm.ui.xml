@@ -1,29 +1,121 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.datepicker.client"
-	xmlns:cus="urn:import:tn.tunisiana.customer.client.views.customui"
-	>
+	xmlns:cus="urn:import:tn.tunisiana.customer.client.views.customui">
 	<ui:style src="styles/CustomerManager.css">
 		.important {
 			font-weight: bold;
 		}
-	
+		
+		
 	</ui:style>
-	<g:HTMLPanel styleName="{style.htmlPannel}" >
-		<g:Label text="Nom" width="120px"/>
-		<g:TextBox/>
-		<g:Label text="Prénom" width="120px"/>
-		<g:TextBox/>
-		<g:Label text="Date de naissance" width="120px"/>
-	<!-- 	<p1:DatePicker ui:field="birthday" width="142px" height="43px"/> -->
-		<cus:DatePickerWithYearSelector ui:field="birthday" width="142px" height="43px"/>
-		<g:Label text="Adresse" width="121px"/>
-		<g:TextBox/>
-		<g:Label text="Ville" width="121px"/>
-		<g:TextBox/>
-		<g:Label text="Pays" width="122px"/>
-		<g:ListBox visibleItemCount="5" height="27px"/>
-		<g:Button styleName="{style.important}" ui:field="button" text="Valider"  />
+	<g:HTMLPanel styleName="{style.htmlPannel}">
+		<g:Label text="Nom" width="33px"   />
+		<g:TextBox ui:field="nom" />
+		<g:Label text="Prénom" width="120px" />
+		<g:TextBox ui:field="prenom"/>
+		<g:Label text="Nationalité" width="120px" />
+		<g:TextBox ui:field="nationalite"/>
+		<g:Label text="Civilité" width="120px" />
+
+		<g:RadioButton name="new name" text="M" />
+		<g:RadioButton name="new name" text="Mme" />
+		<g:RadioButton name="new name" text="Mlle" />
+		<g:Label text="Téléphone fixe" width="120px" />
+		<g:TextBox ui:field="tel"/>
+		<g:Label text="Adresse email" width="120px" />
+		<g:TextBox ui:field="email"/>
+		<g:Label text="Piéce d'identité" width="120px" />
+		<g:RadioButton name="new name" text="Carte d&apos;identité Nationale" />
+		<g:RadioButton name="new name" text="Passeport" />
+		<g:Label text="Numéro Pièce d'identité" width="120px" />
+		<g:TextBox ui:field="numId"/>
+		<g:Label text="Date de naissance" width="120px" />
+		<!-- <p1:DatePicker ui:field="birthday" width="142px" height="43px"/> -->
+		<cus:DatePickerWithYearSelector
+			ui:field="birthday" width="142px" height="43px" />
+		<g:Label text="Adresse: " width="121px" />
+		<g:TextBox ui:field="adresse"/>
+		<g:Label text="Ville" width="121px" />
+		<g:TextBox ui:field="ville"/>
+		<g:Label text="code postal" width="122px" />
+		<g:TextBox ui:field="postcode"/>
+		<g:Label text="Gouvernorat" width="122px" />
+		<g:ListBox visibleItemCount="5" height="27px" ui:field="gouvernorat"/>
+		<g:Label text="Niveau d'études" width="120px" />
+
+		<g:RadioButton name="new name" text="Primaire" />
+		<g:RadioButton name="new name" text="Secondaire" />
+		<g:RadioButton name="new name" text="Superieur" />
+		<g:Label text="Proféssion" width="120px" />
+		<g:RadioButton name="new name" text="Salarié" />
+		<g:RadioButton name="new name" text="Proféssion Libérale" />
+		<g:RadioButton name="new name" text="Etudiant" />
+		<g:Label text="Autre" width="120px" />
+
+		<g:TextBox ui:field="autreProfession"/>
+		<g:Label text="Raison d'achat" width="120px" />
+		<g:RadioButton name="new name" text="Usage Personnel" />
+		<g:RadioButton name="new name" text="Usage Professionnel" />
+		<g:RadioButton name="new name" text="Pour Autrui*" />
+		<g:Label
+			text="Si vous n'êtes pas l'utilisateur veuillez remplir les champs suivants"
+			width="120px" />
+
+		<g:Label text="Niveau d'études" width="120px" />
+		<g:RadioButton name="new name" text="Salarié" />
+		<g:RadioButton name="new name" text="Proféssion Libérale" />
+		<g:RadioButton name="new name" text="Etudiant" />
+		<g:Label text="Autre" width="120px" />
+
+		<g:TextBox ui:field="autreNivEtudes"/>
+
+		<g:Label text="Nom" width="120px" />
+		<g:TextBox ui:field="nomUtilisateur"/>
+		<g:Label text="Prénom" width="120px" />
+		<g:TextBox ui:field="prenomUtilisateur"/>
+		<g:Label text="Nationalité" width="120px" />
+		<g:TextBox ui:field="nationaliteUtilisateur"/>
+		<g:Label text="Civilité" width="120px" />
+
+		<g:RadioButton name="new name" text="M" />
+		<g:RadioButton name="new name" text="Mme" />
+		<g:RadioButton name="new name" text="Mlle" />
+
+		<g:Label text="Adresse: " width="121px" />
+		<g:TextBox ui:field="adresseUtilisateur"/>
+		<g:Label text="Ville" width="121px" />
+		<g:TextBox ui:field="villeUtilisateur" />
+		<g:Label text="code postal" width="122px" />
+		<g:TextBox ui:field="postCodeUtilisateur"/>
+		<g:Label text="Gouvernorat" width="122px" />
+		<g:ListBox visibleItemCount="5" height="27px" ui:field="gouvernoratUtilisateur"/>
+
+		<g:Label text="Achat accompagné? si oui remplir les champs suivants"
+			width="120px" />
+
+		<g:RadioButton name="new name" text="Oui" />
+		<g:RadioButton name="new name" text="Non" />
+
+		<g:RadioButton name="new name" text="Ami(es)" />
+		<g:RadioButton name="new name" text="Parents" />
+		<g:RadioButton name="new name" text="Vendeur" />
+
+		<g:Label text="Raison du choix de l'opérateur" width="120px" />
+		<g:RadioButton name="new name" text="Image" />
+		<g:RadioButton name="new name" text="Prix" />
+		<g:RadioButton name="new name" text="Qualité de service" />
+		<g:RadioButton name="new name" text="Offre" />
+		<g:Label text="Autre" width="120px" />
+
+		<g:TextBox ui:field="AutreRaison"/>
+
+
+		<g:Label text="Ancien Opérateur" width="122px" />
+		<g:ListBox visibleItemCount="5" height="27px" ui:field="operateur" />
+
+		<g:Button styleName="{style.important}" ui:field="button"
+			text="Valider" />
 	</g:HTMLPanel>
 </ui:UiBinder> 
 

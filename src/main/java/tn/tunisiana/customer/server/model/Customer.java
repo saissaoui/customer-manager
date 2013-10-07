@@ -30,7 +30,7 @@ public class Customer implements java.io.Serializable {
 	private String gouvernorat;
 	private String adress;
 	private String country;
-	private Character sex;
+	private String sex;
 	private String phone;
 	private String email;
 	private String idType;
@@ -97,7 +97,7 @@ public class Customer implements java.io.Serializable {
 	}
 
 	public Customer(String name, String lastname, Integer age,
-			String gouvernorat, String adress, String country, Character sex,
+			String gouvernorat, String adress, String country, String sex,
 			String phone, String email, String idType, String idNumber,
 			String profession, String raisonAchat, String lienParente,
 			String nomUtilisateur, String prenomUtilisateur,
@@ -201,11 +201,11 @@ public class Customer implements java.io.Serializable {
 	}
 
 	@Column(name = "sex", length = 1)
-	public Character getSex() {
+	public String getSex() {
 		return this.sex;
 	}
 
-	public void setSex(Character sex) {
+	public void setSex(String sex) {
 		this.sex = sex;
 	}
 

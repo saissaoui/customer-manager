@@ -12,7 +12,7 @@ public class CustomerDto implements Serializable {
 	private String gouvernorat;
 	private String adress;
 	private String country;
-	private Character sex;
+	private String sex;
 	private String phone;
 	private String email;
 	private String idType;
@@ -35,6 +35,56 @@ public class CustomerDto implements Serializable {
 	private String raisonChoix;
 
 	private long distance;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public CustomerDto() {
+		super();
+	}
+
+	public CustomerDto(String name, String lastname, Integer age,
+			String gouvernorat, String adress, String country, String sex,
+			String phone, String email, String idType, String idNumber,
+			String profession, String raisonAchat, String lienParente,
+			String nomUtilisateur, String prenomUtilisateur,
+			Date dateNaissanceUtilisateur, String professionUtilisateur,
+			Date dateNaissance, String villeUtilisateur,
+			Long codePostalUtilisateur, Long codePostal,
+			String gouvernoratUtilisateur, String sexeUtilisateur,
+			String achatAccompagne, String accompagnant, String raisonChoix) {
+		super();
+		this.name = name;
+		this.lastname = lastname;
+		this.age = age;
+		this.gouvernorat = gouvernorat;
+		this.adress = adress;
+		this.country = country;
+		this.sex = sex;
+		this.phone = phone;
+		this.email = email;
+		this.idType = idType;
+		this.idNumber = idNumber;
+		this.profession = profession;
+		this.raisonAchat = raisonAchat;
+		this.lienParente = lienParente;
+		this.nomUtilisateur = nomUtilisateur;
+		this.prenomUtilisateur = prenomUtilisateur;
+		this.dateNaissanceUtilisateur = dateNaissanceUtilisateur;
+		this.professionUtilisateur = professionUtilisateur;
+		this.dateNaissance = dateNaissance;
+		this.villeUtilisateur = villeUtilisateur;
+		this.codePostalUtilisateur = codePostalUtilisateur;
+		this.codePostal = codePostal;
+		this.gouvernoratUtilisateur = gouvernoratUtilisateur;
+		this.sexeUtilisateur = sexeUtilisateur;
+		this.achatAccompagne = achatAccompagne;
+		this.accompagnant = accompagnant;
+		this.raisonChoix = raisonChoix;
+
+	}
 
 	public long getDistance() {
 		return distance;
@@ -100,11 +150,11 @@ public class CustomerDto implements Serializable {
 		this.country = country;
 	}
 
-	public Character getSex() {
+	public String getSex() {
 		return sex;
 	}
 
-	public void setSex(Character sex) {
+	public void setSex(String sex) {
 		this.sex = sex;
 	}
 

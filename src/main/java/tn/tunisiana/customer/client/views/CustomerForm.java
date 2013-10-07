@@ -59,6 +59,8 @@ public class CustomerForm extends Composite implements HasText {
 	@UiField
 	TextBox prenomUtilisateur;
 	@UiField
+	DatePickerWithYearSelector birthdayUtilisateur;
+	@UiField
 	TextBox nationaliteUtilisateur;
 	@UiField
 	TextBox adresseUtilisateur;
@@ -174,9 +176,19 @@ public class CustomerForm extends Composite implements HasText {
 
 	private CustomerDto createCustomer() {
 
-		CustomerDto customer = new CustomerDto();
-		int age = calculateAge();
-		customer.setAge(age);
+		CustomerDto customer = new CustomerDto(nom.getText(), prenom.getText(),
+				calculateAge(), gouvernorat.getItemText(gouvernorat
+						.getTabIndex()), adresse.getText(),
+				nationalite.getText(), null, tel.getText(), email.getText(),
+				null, numId.getText(), null, null, null,
+				nomUtilisateur.getText(), prenomUtilisateur.getText(),
+				birthdayUtilisateur.getFirstDate(), null,
+				birthday.getFirstDate(), villeUtilisateur.getText(),
+				Long.parseLong(postCodeUtilisateur.getText()),
+				Long.parseLong(postcode.getText()), null, null, null, null,
+				null);
+
+		
 
 		return customer;
 	}

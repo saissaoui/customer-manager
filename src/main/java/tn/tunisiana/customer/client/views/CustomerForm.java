@@ -19,6 +19,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasText;
 import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.user.client.ui.RadioButton;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 
@@ -30,50 +31,39 @@ public class CustomerForm extends Composite implements HasText {
 	Button button;
 
 	@UiField
-	DatePickerWithYearSelector birthday;
+	DatePickerWithYearSelector birthday, birthdayUtilisateur;
 	@UiField
-	TextBox nom;
-	@UiField
-	TextBox prenom;
-	@UiField
-	TextBox nationalite;
-	@UiField
-	TextBox tel;
-	@UiField
-	TextBox email;
-	@UiField
-	TextBox numId;
-	@UiField
-	TextBox adresse;
-	@UiField
-	TextBox ville;
-	@UiField
-	TextBox postcode;
-	@UiField
-	ListBox gouvernorat;
-	@UiField
-	TextBox autreProfession;
+	TextBox nom, prenom, nationalite, tel, email, numId, adresse, ville,
+			postcode, autreProfession, nomUtilisateur, prenomUtilisateur,
+			nationaliteUtilisateur, adresseUtilisateur, villeUtilisateur,
+			postCodeUtilisateur, AutreRaison;
 
 	@UiField
-	TextBox nomUtilisateur;
+	ListBox gouvernorat, operateur, gouvernoratUtilisateur;
+
 	@UiField
-	TextBox prenomUtilisateur;
-	@UiField
-	DatePickerWithYearSelector birthdayUtilisateur;
-	@UiField
-	TextBox nationaliteUtilisateur;
-	@UiField
-	TextBox adresseUtilisateur;
-	@UiField
-	TextBox villeUtilisateur;
-	@UiField
-	TextBox postCodeUtilisateur;
-	@UiField
-	ListBox gouvernoratUtilisateur;
-	@UiField
-	TextBox AutreRaison;
-	@UiField
-	ListBox operateur;
+	RadioButton
+	// civilité
+			mr,
+			mme, mlle,
+			// type piece identité
+			cin, passeport,
+			// niveau etudes
+			primaire, sec, sup,
+			// activité
+			sal, liberal, etudiant,
+			// usage
+			perso, pro, autrui,
+			// activité utilisateur
+			salUtil, liberalUtil, etudiantUtil,
+			// civilité utilisateur
+			mUtil, mmeUtil, mlleUtil,
+			// achat accompagné
+			oui, non,
+			// accompagant
+			Ami, parents, vendeur,
+			// raison achat
+			image, prix, qos, offre;
 
 	// private final CustomerManagerServiceAsync custoSrv = GWT
 	// .create(CustomerManagerService.class);
@@ -188,8 +178,60 @@ public class CustomerForm extends Composite implements HasText {
 				Long.parseLong(postcode.getText()), null, null, null, null,
 				null);
 
-		
-
 		return customer;
+	}
+
+	/*
+	 * checkboxes handlers
+	 */
+
+	@UiHandler({ "mr", "mme", "mlle" })
+	void selectCivilite(ClickEvent event) {
+
+	}
+
+	@UiHandler({ "cin", "passeport", })
+	void selectTypeId(ClickEvent event) {
+
+	}
+
+	@UiHandler({ "primaire", "sec", "sup", })
+	void selectNivEtud(ClickEvent event) {
+
+	}
+
+	@UiHandler({ "sal", "liberal", "etudiant", })
+	void selectActivite(ClickEvent event) {
+
+	}
+
+	@UiHandler({ "perso", "pro", "autrui", })
+	void selectUsage(ClickEvent event) {
+
+	}
+
+	@UiHandler({ "salUtil", "liberalUtil", "etudiantUtil", })
+	void selectActiviteUtil(ClickEvent event) {
+
+	}
+
+	@UiHandler({ "mUtil", "mmeUtil", "mlleUtil" })
+	void selectCiviliteUtil(ClickEvent event) {
+
+	}
+
+	@UiHandler({ "oui", "non" })
+	void selectAchatAccompagne(ClickEvent event) {
+
+	}
+
+	@UiHandler({ "Ami", "parents", "vendeur" })
+	void selectAccompagnant(ClickEvent event) {
+
+	}
+
+	@UiHandler({ "image", "prix", "qos", "offre" })
+	void selectRaisonAchat(ClickEvent event) {
+
 	}
 }

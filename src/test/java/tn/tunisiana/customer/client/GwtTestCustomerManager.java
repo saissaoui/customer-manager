@@ -2,10 +2,8 @@ package tn.tunisiana.customer.client;
 
 import java.util.List;
 
-import tn.tunisiana.customer.client.services.IOfferManagerService;
-import tn.tunisiana.customer.client.services.IOfferManagerServiceAsync;
-import tn.tunisiana.customer.shared.model.CustomerDto;
-import tn.tunisiana.customer.shared.model.OfferDto;
+import tn.tunisiana.customer.client.services.IConfManagerService;
+import tn.tunisiana.customer.client.services.IConfManagerServiceAsync;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.junit.client.GWTTestCase;
@@ -47,53 +45,85 @@ public class GwtTestCustomerManager extends GWTTestCase {
 	 * This test will send a request to the server using the greetServer method
 	 * in GreetingService and verify the response.
 	 */
-	public void testGreetingService() {
+//	public void testGreetingService() {
+//		// Create the service that we will test.
+//		GreetingServiceAsync greetingService = GWT
+//				.create(GreetingService.class);
+//		ServiceDefTarget target = (ServiceDefTarget) greetingService;
+//		target.setServiceEntryPoint(GWT.getModuleBaseURL()
+//				+ "CustomerManager/greet");
+//
+//		// Since RPC calls are asynchronous, we will need to wait for a response
+//		// after this test method returns. This line tells the test runner to
+//		// wait
+//		// up to 10 seconds before timing out.
+//		delayTestFinish(10000);
+//
+//		// Send a request to the server.
+//		greetingService.greetServer("GWT User", new AsyncCallback<String>() {
+//			public void onFailure(Throwable caught) {
+//				// The request resulted in an unexpected error.
+//				fail("Request failure: " + caught.getMessage());
+//			}
+//
+//			public void onSuccess(String result) {
+//				// Verify that the response is correct.
+//				System.out.println(result);
+//				assertTrue(result.startsWith("Hello, GWT User!"));
+//
+//				// Now that we have received a response, we need to tell the
+//				// test runner
+//				// that the test is complete. You must call finishTest() after
+//				// an
+//				// asynchronous test finishes successfully, or the test will
+//				// time out.
+//				finishTest();
+//			}
+//		});
+//	}
+//
+//	public void testOfferManagerService() {
+//
+//		CustomerDto customer = new CustomerDto();
+//		customer.setAge(30);
+//		// Create the service that we will test.
+//		IOfferManagerServiceAsync omService = GWT
+//				.create(IOfferManagerService.class);
+//		ServiceDefTarget target = (ServiceDefTarget) omService;
+//		target.setServiceEntryPoint(GWT.getModuleBaseURL()
+//				+ "CustomerManager/oManagerService");
+//
+//		// Since RPC calls are asynchronous, we will need to wait for a response
+//		// after this test method returns. This line tells the test runner to
+//		// wait
+//		// up to 10 seconds before timing out.
+//		delayTestFinish(100000);
+//
+//		// Send a request to the server.
+//		omService.getOffersFor(customer, new AsyncCallback<List<OfferDto>>() {
+//			public void onFailure(Throwable caught) {
+//				// The request resulted in an unexpected error.
+//				fail("Request failure: " + caught.getMessage());
+//			}
+//
+//			public void onSuccess(List<OfferDto> result) {
+//				System.out.println(result.size());
+//				for (OfferDto offer : result)
+//					System.out.println(offer.getOfferName());
+//				assertTrue(result != null);
+//
+//			}
+//		});
+//	}
+
+	public void testConfManagerService() {
+
 		// Create the service that we will test.
-		GreetingServiceAsync greetingService = GWT
-				.create(GreetingService.class);
-		ServiceDefTarget target = (ServiceDefTarget) greetingService;
+		IConfManagerServiceAsync confService = GWT
+				.create(IConfManagerService.class);
+		ServiceDefTarget target = (ServiceDefTarget) confService;
 		target.setServiceEntryPoint(GWT.getModuleBaseURL()
-				+ "CustomerManager/greet");
-
-		// Since RPC calls are asynchronous, we will need to wait for a response
-		// after this test method returns. This line tells the test runner to
-		// wait
-		// up to 10 seconds before timing out.
-		delayTestFinish(10000);
-
-		// Send a request to the server.
-		greetingService.greetServer("GWT User", new AsyncCallback<String>() {
-			public void onFailure(Throwable caught) {
-				// The request resulted in an unexpected error.
-				fail("Request failure: " + caught.getMessage());
-			}
-
-			public void onSuccess(String result) {
-				// Verify that the response is correct.
-				System.out.println(result);
-				assertTrue(result.startsWith("Hello, GWT User!"));
-
-				// Now that we have received a response, we need to tell the
-				// test runner
-				// that the test is complete. You must call finishTest() after
-				// an
-				// asynchronous test finishes successfully, or the test will
-				// time out.
-				finishTest();
-			}
-		});
-	}
-
-	public void testOfferManagerService() {
-
-		CustomerDto customer = new CustomerDto();
-		customer.setAge(30);
-		// Create the service that we will test.
-		IOfferManagerServiceAsync omService = GWT
-				.create(IOfferManagerService.class);
-		ServiceDefTarget target = (ServiceDefTarget) omService;
-		target.setServiceEntryPoint(GWT.getModuleBaseURL()
-				+ "CustomerManager/oManagerService");
+				+ "CustomerManager/ConfManagerService");
 
 		// Since RPC calls are asynchronous, we will need to wait for a response
 		// after this test method returns. This line tells the test runner to
@@ -102,17 +132,16 @@ public class GwtTestCustomerManager extends GWTTestCase {
 		delayTestFinish(100000);
 
 		// Send a request to the server.
-		omService.getOffersFor(customer, new AsyncCallback<List<OfferDto>>() {
-			public void onFailure(Throwable caught) {
-				// The request resulted in an unexpected error.
-				fail("Request failure: " + caught.getMessage());
+		confService.getGouvernorats(new AsyncCallback<List<String>>() {
+
+			public void onSuccess(List<String> arg0) {
+				System.out.println("nb gouvs " + arg0.size());
+				assertTrue(arg0 != null);
+
 			}
 
-			public void onSuccess(List<OfferDto> result) {
-				System.out.println(result.size());
-				for (OfferDto offer : result)
-					System.out.println(offer.getOfferName());
-				assertTrue(result != null);
+			public void onFailure(Throwable arg0) {
+				fail("Request failure: " + arg0.getMessage());
 
 			}
 		});

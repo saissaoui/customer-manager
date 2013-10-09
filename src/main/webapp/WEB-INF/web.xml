@@ -18,9 +18,18 @@
 		<servlet-name>offerManServlet</servlet-name>
 		<servlet-class>tn.tunisiana.customer.server.services.OfferManagerServiceImpl</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>ConfManServlet</servlet-name>
+		<servlet-class>tn.tunisiana.customer.server.services.ConfManagerServiceImpl</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>greetServlet</servlet-name>
 		<url-pattern>/CustomerManager/greet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>ConfManServlet</servlet-name>
+		<url-pattern>/CustomerManager/ConfManagerService</url-pattern>
 	</servlet-mapping>
 	<!-- <servlet-mapping>
 		<servlet-name>customerManServlet</servlet-name>

@@ -14,7 +14,7 @@ public class CustomerServiceImplTest {
 	
 	@Test
 	public void testSaveCustomer() {
-		Customer customer = new Customer("custo1","custo1",20,"paris","58 rue du ruisseau","France", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+	//	Customer customer = new Customer("custo1","custo1",20,"paris","58 rue du ruisseau","France", null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null);
 		//assertTrue(cs.saveCustomer(customer)!=0);
 	}
 

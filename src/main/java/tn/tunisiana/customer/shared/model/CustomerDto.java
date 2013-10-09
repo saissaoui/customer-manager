@@ -12,7 +12,7 @@ public class CustomerDto implements Serializable {
 	private String gouvernorat;
 	private String adress;
 	private String country;
-	private String sex;
+	private String civilite;
 	private String phone;
 	private String email;
 	private String idType;
@@ -29,8 +29,8 @@ public class CustomerDto implements Serializable {
 	private Long codePostalUtilisateur;
 	private Long codePostal;
 	private String gouvernoratUtilisateur;
-	private String sexeUtilisateur;
-	private String achatAccompagne;
+	private String civiliteUtilisateur;
+	private boolean achatAccompagne;
 	private String accompagnant;
 	private String raisonChoix;
 
@@ -46,15 +46,15 @@ public class CustomerDto implements Serializable {
 	}
 
 	public CustomerDto(String name, String lastname, Integer age,
-			String gouvernorat, String adress, String country, String sex,
+			String gouvernorat, String adress, String country, String civilite,
 			String phone, String email, String idType, String idNumber,
 			String profession, String raisonAchat, String lienParente,
 			String nomUtilisateur, String prenomUtilisateur,
 			Date dateNaissanceUtilisateur, String professionUtilisateur,
 			Date dateNaissance, String villeUtilisateur,
 			Long codePostalUtilisateur, Long codePostal,
-			String gouvernoratUtilisateur, String sexeUtilisateur,
-			String achatAccompagne, String accompagnant, String raisonChoix) {
+			String gouvernoratUtilisateur, String civiliteUtilisateur,
+			boolean achatAccompagne, String accompagnant, String raisonChoix) {
 		super();
 		this.name = name;
 		this.lastname = lastname;
@@ -62,7 +62,7 @@ public class CustomerDto implements Serializable {
 		this.gouvernorat = gouvernorat;
 		this.adress = adress;
 		this.country = country;
-		this.sex = sex;
+		this.civilite = civilite;
 		this.phone = phone;
 		this.email = email;
 		this.idType = idType;
@@ -79,7 +79,7 @@ public class CustomerDto implements Serializable {
 		this.codePostalUtilisateur = codePostalUtilisateur;
 		this.codePostal = codePostal;
 		this.gouvernoratUtilisateur = gouvernoratUtilisateur;
-		this.sexeUtilisateur = sexeUtilisateur;
+		this.civiliteUtilisateur = civiliteUtilisateur;
 		this.achatAccompagne = achatAccompagne;
 		this.accompagnant = accompagnant;
 		this.raisonChoix = raisonChoix;
@@ -150,12 +150,12 @@ public class CustomerDto implements Serializable {
 		this.country = country;
 	}
 
-	public String getSex() {
-		return sex;
+	public String getCivilite() {
+		return civilite;
 	}
 
-	public void setSex(String sex) {
-		this.sex = sex;
+	public void setCivilite(String civilite) {
+		this.civilite = civilite;
 	}
 
 	public String getPhone() {
@@ -286,19 +286,19 @@ public class CustomerDto implements Serializable {
 		this.gouvernoratUtilisateur = gouvernoratUtilisateur;
 	}
 
-	public String getSexeUtilisateur() {
-		return sexeUtilisateur;
+	public String getCiviliteUtilisateur() {
+		return civiliteUtilisateur;
 	}
 
-	public void setSexeUtilisateur(String sexeUtilisateur) {
-		this.sexeUtilisateur = sexeUtilisateur;
+	public void setCiviliteUtilisateur(String civiliteUtilisateur) {
+		this.civiliteUtilisateur = civiliteUtilisateur;
 	}
 
-	public String getAchatAccompagne() {
+	public boolean getAchatAccompagne() {
 		return achatAccompagne;
 	}
 
-	public void setAchatAccompagne(String achatAccompagne) {
+	public void setAchatAccompagne(boolean achatAccompagne) {
 		this.achatAccompagne = achatAccompagne;
 	}
 

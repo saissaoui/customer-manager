@@ -1,8 +1,17 @@
 package tn.tunisiana.customer.client.views;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
 import java.util.Date;
 import java.util.List;
 
+import tn.tunisiana.customer.client.services.IConfManagerService;
+import tn.tunisiana.customer.client.services.IConfManagerServiceAsync;
 import tn.tunisiana.customer.client.services.IOfferManagerService;
 import tn.tunisiana.customer.client.services.IOfferManagerServiceAsync;
 import tn.tunisiana.customer.client.views.customui.DatePickerWithYearSelector;
@@ -26,6 +35,8 @@ import com.google.gwt.user.client.ui.Widget;
 //import tn.tunisiana.customer.client.services.CustomerManagerService;
 
 public class CustomerForm extends Composite implements HasText {
+
+	private CustomerDto customer = new CustomerDto();
 
 	@UiField
 	Button button;
@@ -72,12 +83,33 @@ public class CustomerForm extends Composite implements HasText {
 	private static CustomerFormUiBinder uiBinder = GWT
 			.create(CustomerFormUiBinder.class);
 
+	private final IConfManagerServiceAsync confService = GWT
+			.create(IConfManagerService.class);
+
 	interface CustomerFormUiBinder extends UiBinder<Widget, CustomerForm> {
 	}
 
 	public CustomerForm() {
 		initWidget(uiBinder.createAndBindUi(this));
 		// birthday = new DatePickerWithYearSelector();
+		final List<String> gouvsList = null;
+		confService.getGouvernorats(new AsyncCallback<List<String>>() {
+
+			public void onSuccess(List<String> gouvs) {
+				if (gouvs != null) {
+					for (String gouv : gouvs) {
+						gouvernorat.addItem(gouv);
+						gouvernoratUtilisateur.addItem(gouv);
+					}
+				}
+
+			}
+
+			public void onFailure(Throwable arg0) {
+
+			}
+		});
+
 	}
 
 	public CustomerForm(String firstName) {
@@ -99,8 +131,9 @@ public class CustomerForm extends Composite implements HasText {
 	}
 
 	private void evaluateCustomer() {
+		updateCustomer();
 
-		offerService.getOffersFor(createCustomer(),
+		offerService.getOffersFor(customer,
 				new AsyncCallback<List<OfferDto>>() {
 
 					public void onSuccess(List<OfferDto> offres) {
@@ -164,21 +197,27 @@ public class CustomerForm extends Composite implements HasText {
 		return result;
 	}
 
-	private CustomerDto createCustomer() {
+	private void updateCustomer() {
 
-		CustomerDto customer = new CustomerDto(nom.getText(), prenom.getText(),
-				calculateAge(), gouvernorat.getItemText(gouvernorat
-						.getTabIndex()), adresse.getText(),
-				nationalite.getText(), null, tel.getText(), email.getText(),
-				null, numId.getText(), null, null, null,
-				nomUtilisateur.getText(), prenomUtilisateur.getText(),
-				birthdayUtilisateur.getFirstDate(), null,
-				birthday.getFirstDate(), villeUtilisateur.getText(),
-				Long.parseLong(postCodeUtilisateur.getText()),
-				Long.parseLong(postcode.getText()), null, null, null, null,
-				null);
+		customer.setName(nom.getText());
+		customer.setLastname(prenom.getText());
+		customer.setAge(calculateAge());
+		// customer.setGouvernorat(gouvernorat.getItemText(gouvernorat
+		// .getTabIndex()));
+		customer.setAdress(adresse.getText());
+		customer.setCountry(nationalite.getText());
+		customer.setPhone(tel.getText());
+		customer.setEmail(email.getText());
+		customer.setIdNumber(numId.getText());
+		customer.setNomUtilisateur(nomUtilisateur.getText());
+		customer.setPrenomUtilisateur(prenomUtilisateur.getText());
+		customer.setDateNaissanceUtilisateur(birthdayUtilisateur.getFirstDate());
+		customer.setDateNaissance(birthday.getFirstDate());
+		customer.setVilleUtilisateur(villeUtilisateur.getText());
+		// customer.setCodePostalUtilisateur(Long.parseLong(postCodeUtilisateur
+		// .getText()));
+		customer.setCodePostal(Long.parseLong(postcode.getText()));
 
-		return customer;
 	}
 
 	/*
@@ -188,50 +227,80 @@ public class CustomerForm extends Composite implements HasText {
 	@UiHandler({ "mr", "mme", "mlle" })
 	void selectCivilite(ClickEvent event) {
 
+		RadioButton source = (RadioButton) event.getSource();
+		if (source.isChecked()) {
+			customer.setCivilite(source.getText());
+
+		}
 	}
 
 	@UiHandler({ "cin", "passeport", })
 	void selectTypeId(ClickEvent event) {
+		RadioButton source = (RadioButton) event.getSource();
 
+		if (source.isChecked())
+			customer.setIdType(source.getText());
 	}
 
 	@UiHandler({ "primaire", "sec", "sup", })
 	void selectNivEtud(ClickEvent event) {
+		RadioButton source = (RadioButton) event.getSource();
+		if (source.isChecked())
+			;
 
+		// customer.set
 	}
 
 	@UiHandler({ "sal", "liberal", "etudiant", })
 	void selectActivite(ClickEvent event) {
-
+		RadioButton source = (RadioButton) event.getSource();
+		if (source.isChecked())
+			customer.setProfession(source.getText());
 	}
 
 	@UiHandler({ "perso", "pro", "autrui", })
 	void selectUsage(ClickEvent event) {
-
+		RadioButton source = (RadioButton) event.getSource();
+		if (source.isChecked())
+			customer.setRaisonAchat(source.getText());
 	}
 
 	@UiHandler({ "salUtil", "liberalUtil", "etudiantUtil", })
 	void selectActiviteUtil(ClickEvent event) {
-
+		RadioButton source = (RadioButton) event.getSource();
+		if (source.isChecked())
+			customer.setProfessionUtilisateur(source.getText());
 	}
 
 	@UiHandler({ "mUtil", "mmeUtil", "mlleUtil" })
 	void selectCiviliteUtil(ClickEvent event) {
-
+		RadioButton source = (RadioButton) event.getSource();
+		if (source.isChecked())
+			customer.setCiviliteUtilisateur(source.getText());
 	}
 
 	@UiHandler({ "oui", "non" })
 	void selectAchatAccompagne(ClickEvent event) {
+		RadioButton source = (RadioButton) event.getSource();
+		if (source.isChecked()) {
 
+			boolean achat = source.getText() == "oui" ? true : false;
+			customer.setAchatAccompagne(achat);
+		}
 	}
 
 	@UiHandler({ "Ami", "parents", "vendeur" })
 	void selectAccompagnant(ClickEvent event) {
-
+		RadioButton source = (RadioButton) event.getSource();
+		if (source.isChecked())
+			customer.setAccompagnant(source.getText());
 	}
 
 	@UiHandler({ "image", "prix", "qos", "offre" })
 	void selectRaisonAchat(ClickEvent event) {
-
+		RadioButton source = (RadioButton) event.getSource();
+		if (source.isChecked())
+			customer.setRaisonChoix(source.getText());
 	}
+
 }

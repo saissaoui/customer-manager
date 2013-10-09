@@ -23,6 +23,10 @@ import tn.tunisiana.customer.shared.model.CustomerDto;
 @Table(name = "customer", catalog = "tunisianaDb")
 public class Customer implements java.io.Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer idcustomer;
 	private String name;
 	private String lastname;
@@ -30,7 +34,7 @@ public class Customer implements java.io.Serializable {
 	private String gouvernorat;
 	private String adress;
 	private String country;
-	private String sex;
+	private String civilite;
 	private String phone;
 	private String email;
 	private String idType;
@@ -47,8 +51,8 @@ public class Customer implements java.io.Serializable {
 	private Long codePostalUtilisateur;
 	private Long codePostal;
 	private String gouvernoratUtilisateur;
-	private String sexeUtilisateur;
-	private String achatAccompagne;
+	private String civiliteUtilisateur;
+	private boolean achatAccompagne;
 	private String accompagnant;
 	private String raisonChoix;
 
@@ -72,7 +76,7 @@ public class Customer implements java.io.Serializable {
 		this.gouvernorat = cutomer.getGouvernorat();
 		this.adress = cutomer.getGouvernorat();
 		this.country = cutomer.getCountry();
-		this.sex = cutomer.getSex();
+		this.civilite = cutomer.getCivilite();
 		this.phone = cutomer.getPhone();
 		this.email = cutomer.getEmail();
 		this.idType = cutomer.getIdType();
@@ -89,7 +93,7 @@ public class Customer implements java.io.Serializable {
 		this.codePostalUtilisateur = cutomer.getCodePostalUtilisateur();
 		this.codePostal = cutomer.getCodePostal();
 		this.gouvernoratUtilisateur = cutomer.getGouvernoratUtilisateur();
-		this.sexeUtilisateur = cutomer.getSexeUtilisateur();
+		this.civiliteUtilisateur = cutomer.getCiviliteUtilisateur();
 		this.achatAccompagne = cutomer.getAchatAccompagne();
 		this.accompagnant = cutomer.getAccompagnant();
 		this.raisonChoix = cutomer.getRaisonChoix();
@@ -97,22 +101,22 @@ public class Customer implements java.io.Serializable {
 	}
 
 	public Customer(String name, String lastname, Integer age,
-			String gouvernorat, String adress, String country, String sex,
+			String gouvernorat, String adress, String country, String civilite,
 			String phone, String email, String idType, String idNumber,
 			String profession, String raisonAchat, String lienParente,
 			String nomUtilisateur, String prenomUtilisateur,
 			Date dateNaissanceUtilisateur, String professionUtilisateur,
 			Date dateNaissance, String villeUtilisateur,
 			Long codePostalUtilisateur, Long codePostal,
-			String gouvernoratUtilisateur, String sexeUtilisateur,
-			String achatAccompagne, String accompagnant, String raisonChoix) {
+			String gouvernoratUtilisateur, String civiliteUtilisateur,
+			boolean achatAccompagne, String accompagnant, String raisonChoix) {
 		this.name = name;
 		this.lastname = lastname;
 		this.age = age;
 		this.gouvernorat = gouvernorat;
 		this.adress = adress;
 		this.country = country;
-		this.sex = sex;
+		this.civilite = civilite;
 		this.phone = phone;
 		this.email = email;
 		this.idType = idType;
@@ -129,7 +133,7 @@ public class Customer implements java.io.Serializable {
 		this.codePostalUtilisateur = codePostalUtilisateur;
 		this.codePostal = codePostal;
 		this.gouvernoratUtilisateur = gouvernoratUtilisateur;
-		this.sexeUtilisateur = sexeUtilisateur;
+		this.civiliteUtilisateur = civiliteUtilisateur;
 		this.achatAccompagne = achatAccompagne;
 		this.accompagnant = accompagnant;
 		this.raisonChoix = raisonChoix;
@@ -201,12 +205,12 @@ public class Customer implements java.io.Serializable {
 	}
 
 	@Column(name = "sex", length = 1)
-	public String getSex() {
-		return this.sex;
+	public String getCivilite() {
+		return this.civilite;
 	}
 
-	public void setSex(String sex) {
-		this.sex = sex;
+	public void setCivilite(String civilite) {
+		this.civilite = civilite;
 	}
 
 	@Column(name = "phone", length = 45)
@@ -356,20 +360,20 @@ public class Customer implements java.io.Serializable {
 	}
 
 	@Column(name = "sexe_utilisateur", length = 45)
-	public String getSexeUtilisateur() {
-		return this.sexeUtilisateur;
+	public String getCiviliteUtilisateur() {
+		return this.civiliteUtilisateur;
 	}
 
-	public void setSexeUtilisateur(String sexeUtilisateur) {
-		this.sexeUtilisateur = sexeUtilisateur;
+	public void setCiviliteUtilisateur(String civiliteUtilisateur) {
+		this.civiliteUtilisateur = civiliteUtilisateur;
 	}
 
 	@Column(name = "achat_accompagne", length = 45)
-	public String getAchatAccompagne() {
+	public boolean getAchatAccompagne() {
 		return this.achatAccompagne;
 	}
 
-	public void setAchatAccompagne(String achatAccompagne) {
+	public void setAchatAccompagne(boolean achatAccompagne) {
 		this.achatAccompagne = achatAccompagne;
 	}
 

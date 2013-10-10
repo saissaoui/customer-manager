@@ -6,113 +6,125 @@
 		.important {
 			font-weight: bold;
 		}
-		
-		
 	</ui:style>
 	<g:HTMLPanel styleName="{style.htmlPannel}">
-		<g:Label text="Nom" width="33px"   />
+		<g:Label text="Nom" width="33px" />
 		<g:TextBox ui:field="nom" />
 		<g:Label text="Prénom" width="120px" />
-		<g:TextBox ui:field="prenom"/>
+		<g:TextBox ui:field="prenom" />
 		<g:Label text="Nationalité" width="120px" />
-		<g:TextBox ui:field="nationalite"/>
+		<g:TextBox ui:field="nationalite" />
 		<g:Label text="Civilité" width="120px" />
 
 		<g:RadioButton name="civilite" ui:field="mr" text="M" />
-		<g:RadioButton  name="civilite" ui:field="mme" text="Mme" />
-		<g:RadioButton name="civilite"  ui:field="mlle" text="Mlle" />
+		<g:RadioButton name="civilite" ui:field="mme" text="Mme" />
+		<g:RadioButton name="civilite" ui:field="mlle" text="Mlle" />
 		<g:Label text="Téléphone fixe" width="120px" />
-		<g:TextBox ui:field="tel"/>
+		<g:TextBox ui:field="tel" />
 		<g:Label text="Adresse email" width="120px" />
-		<g:TextBox ui:field="email"/>
+		<g:TextBox ui:field="email" />
 		<g:Label text="Piéce d'identité" width="120px" />
-		<g:RadioButton name="ident"  ui:field="cin" text="Carte d&apos;identité Nationale" />
-		<g:RadioButton name="ident"  ui:field="passeport" text="Passeport" />
+		<g:RadioButton name="ident" ui:field="cin"
+			text="Carte d&apos;identité Nationale" />
+		<g:RadioButton name="ident" ui:field="passeport" text="Passeport" />
 		<g:Label text="Numéro Pièce d'identité" width="120px" />
-		<g:TextBox ui:field="numId"/>
+		<g:TextBox ui:field="numId" />
 		<g:Label text="Date de naissance" width="120px" />
 		<!-- <p1:DatePicker ui:field="birthday" width="142px" height="43px"/> -->
 		<cus:DatePickerWithYearSelector
 			ui:field="birthday" width="142px" height="43px" />
 		<g:Label text="Adresse: " width="121px" />
-		<g:TextBox ui:field="adresse"/>
+		<g:TextBox ui:field="adresse" />
 		<g:Label text="Ville" width="121px" />
-		<g:TextBox ui:field="ville"/>
+		<g:TextBox ui:field="ville" />
 		<g:Label text="code postal" width="122px" />
-		<g:TextBox ui:field="postcode"/>
+		<g:TextBox ui:field="postcode" />
 		<g:Label text="Gouvernorat" width="122px" />
-		<g:ListBox visibleItemCount="1" height="27px" ui:field="gouvernorat"/>
+		<g:ListBox visibleItemCount="1" height="27px" ui:field="gouvernorat" />
 		<g:Label text="Niveau d'études" width="120px" />
 
-		<g:RadioButton  name="nivEt" ui:field="primaire" text="Primaire" />
-		<g:RadioButton name="nivEt"  ui:field="sec" text="Secondaire" />
-		<g:RadioButton name="nivEt"  ui:field="sup" text="Superieur" />
+		<g:RadioButton name="nivEt" ui:field="primaire" text="Primaire" />
+		<g:RadioButton name="nivEt" ui:field="sec" text="Secondaire" />
+		<g:RadioButton name="nivEt" ui:field="sup" text="Superieur" />
 		<g:Label text="Proféssion" width="120px" />
-		<g:RadioButton  name="profession" ui:field="sal" text="Salarié" />
-		<g:RadioButton name="profession"  ui:field="liberal" text="Proféssion Libérale" />
-		<g:RadioButton name="profession"  ui:field="etudiant" text="Etudiant" />
+		<g:RadioButton name="profession" ui:field="sal" text="Salarié" />
+		<g:RadioButton name="profession" ui:field="liberal"
+			text="Proféssion Libérale" />
+		<g:RadioButton name="profession" ui:field="etudiant"
+			text="Etudiant" />
 		<g:Label text="Autre" width="120px" />
 
-		<g:TextBox ui:field="autreProfession"/>
+		<g:TextBox ui:field="autreProfession" />
 		<g:Label text="Raison d'achat" width="120px" />
-		<g:RadioButton  name="raisAchat" ui:field="perso" text="Usage Personnel" />
-		<g:RadioButton  name="raisAchat" ui:field="pro" text="Usage Professionnel" />
-		<g:RadioButton name="raisAchat"  ui:field="autrui" text="Pour Autrui*" />
+		<g:RadioButton formValue="1" name="raisAchat" ui:field="perso"
+			text="Usage Personnel" />
+		<g:RadioButton formValue="2" name="raisAchat" ui:field="pro"
+			text="Usage Professionnel" />
+		<g:RadioButton formValue="3" name="raisAchat" ui:field="autrui"
+			text="Pour Autrui" />
 		<g:Label
 			text="Si vous n'êtes pas l'utilisateur veuillez remplir les champs suivants"
 			width="120px" />
 
 		<g:Label text="Niveau d'études" width="120px" />
-		<g:RadioButton  name="nivEtudUtil" ui:field="salUtil" text="Salarié" />
-		<g:RadioButton  name="nivEtudUtil" ui:field="liberalUtil" text="Proféssion Libérale" />
-		<g:RadioButton  name="nivEtudUtil" ui:field="etudiantUtil" text="Etudiant" />
+		<g:RadioButton name="nivEtudUtil" ui:field="salUtil"
+			text="Salarié" />
+		<g:RadioButton name="nivEtudUtil" ui:field="liberalUtil"
+			text="Proféssion Libérale" />
+		<g:RadioButton name="nivEtudUtil" ui:field="etudiantUtil"
+			text="Etudiant" />
 		<g:Label text="Autre" width="120px" />
 
-		<g:TextBox ui:field="autreNivEtudes"/>
+		<g:TextBox ui:field="autreNivEtudes" />
 
 		<g:Label text="Nom" width="120px" />
-		<g:TextBox ui:field="nomUtilisateur"/>
+		<g:TextBox ui:field="nomUtilisateur" />
 		<g:Label text="Prénom" width="120px" />
-		<g:TextBox ui:field="prenomUtilisateur"/>
+		<g:TextBox ui:field="prenomUtilisateur" />
 		<g:Label text="Date de naissance" width="120px" />
 		<!-- <p1:DatePicker ui:field="birthday" width="142px" height="43px"/> -->
 		<cus:DatePickerWithYearSelector
 			ui:field="birthdayUtilisateur" width="142px" height="43px" />
 		<g:Label text="Nationalité" width="120px" />
-		<g:TextBox ui:field="nationaliteUtilisateur"/>
+		<g:TextBox ui:field="nationaliteUtilisateur" />
 		<g:Label text="Civilité" width="120px" />
 
-		<g:RadioButton name="civiliteUtil"  ui:field="mUtil" text="M" />
-		<g:RadioButton name="civiliteUtil"  ui:field="mmeUtil" text="Mme" />
-		<g:RadioButton name="civiliteUtil"  ui:field="mlleUtil" text="Mlle" />
+		<g:RadioButton name="civiliteUtil" ui:field="mUtil"
+			text="M" />
+		<g:RadioButton name="civiliteUtil" ui:field="mmeUtil"
+			text="Mme" />
+		<g:RadioButton name="civiliteUtil" ui:field="mlleUtil"
+			text="Mlle" />
 
 		<g:Label text="Adresse: " width="121px" />
-		<g:TextBox ui:field="adresseUtilisateur"/>
+		<g:TextBox ui:field="adresseUtilisateur" />
 		<g:Label text="Ville" width="121px" />
 		<g:TextBox ui:field="villeUtilisateur" />
 		<g:Label text="code postal" width="122px" />
-		<g:TextBox ui:field="postCodeUtilisateur"/>
+		<g:TextBox ui:field="postCodeUtilisateur" />
 		<g:Label text="Gouvernorat" width="122px" />
-		<g:ListBox visibleItemCount="1" height="27px" ui:field="gouvernoratUtilisateur"/>
+		<g:ListBox visibleItemCount="1" height="27px"
+			ui:field="gouvernoratUtilisateur" />
 
 		<g:Label text="Achat accompagné? si oui remplir les champs suivants"
 			width="120px" />
 
-		<g:RadioButton name="achatAccomp"  ui:field="oui" text="Oui" />
-		<g:RadioButton  name="achatAccomp" ui:field="non" text="Non" />
+		<g:RadioButton name="achatAccomp" ui:field="oui" text="Oui" />
+		<g:RadioButton name="achatAccomp" ui:field="non" text="Non" />
 
-		<g:RadioButton  name="accompag" ui:field="Ami" text="Ami(es)" />
-		<g:RadioButton  name="accompag" ui:field="parents" text="Parents" />
-		<g:RadioButton  name="accompag" ui:field="vendeur" text="Vendeur" />
+		<g:RadioButton name="accompag" ui:field="Ami" text="Ami(es)" />
+		<g:RadioButton name="accompag" ui:field="parents" text="Parents" />
+		<g:RadioButton name="accompag" ui:field="vendeur" text="Vendeur" />
 
 		<g:Label text="Raison du choix de l'opérateur" width="120px" />
-		<g:RadioButton name="raisonChoix"  ui:field="image" text="Image" />
-		<g:RadioButton  name="raisonChoix" ui:field="prix" text="Prix" />
-		<g:RadioButton name="raisonChoix"  ui:field="qos" text="Qualité de service" />
-		<g:RadioButton name="raisonChoix"  ui:field="offre" text="Offre" />
+		<g:RadioButton name="raisonChoix" ui:field="image" text="Image" />
+		<g:RadioButton name="raisonChoix" ui:field="prix" text="Prix" />
+		<g:RadioButton name="raisonChoix" ui:field="qos"
+			text="Qualité de service" />
+		<g:RadioButton name="raisonChoix" ui:field="offre" text="Offre" />
 		<g:Label text="Autre" width="120px" />
 
-		<g:TextBox ui:field="AutreRaison"/>
+		<g:TextBox ui:field="AutreRaison" />
 
 
 		<g:Label text="Ancien Opérateur" width="122px" />

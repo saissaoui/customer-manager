@@ -27,6 +27,7 @@ public class SegmentTester {
 				try {
 					getCritereValue = customer.getClass().getMethod(
 							"get" + segment.getCritere());
+					
 					interpreter.set("critereValue",
 							Integer.parseInt(getCritereValue.invoke(customer).toString()));
 

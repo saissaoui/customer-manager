@@ -202,8 +202,8 @@ public class CustomerForm extends Composite implements HasText {
 		customer.setName(nom.getText());
 		customer.setLastname(prenom.getText());
 		customer.setAge(calculateAge());
-		// customer.setGouvernorat(gouvernorat.getItemText(gouvernorat
-		// .getTabIndex()));
+		 customer.setGouvernorat(gouvernorat.getItemText(gouvernorat
+		 .getSelectedIndex()));
 		customer.setAdress(adresse.getText());
 		customer.setCountry(nationalite.getText());
 		customer.setPhone(tel.getText());
@@ -262,7 +262,7 @@ public class CustomerForm extends Composite implements HasText {
 	void selectUsage(ClickEvent event) {
 		RadioButton source = (RadioButton) event.getSource();
 		if (source.isChecked())
-			customer.setRaisonAchat(source.getText());
+			customer.setRaisonAchat(Integer.parseInt(source.getFormValue()));
 	}
 
 	@UiHandler({ "salUtil", "liberalUtil", "etudiantUtil", })

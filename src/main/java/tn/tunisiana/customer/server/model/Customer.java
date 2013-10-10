@@ -40,7 +40,7 @@ public class Customer implements java.io.Serializable {
 	private String idType;
 	private String idNumber;
 	private String profession;
-	private String raisonAchat;
+	private int raisonAchat;
 	private String lienParente;
 	private String nomUtilisateur;
 	private String prenomUtilisateur;
@@ -103,7 +103,7 @@ public class Customer implements java.io.Serializable {
 	public Customer(String name, String lastname, Integer age,
 			String gouvernorat, String adress, String country, String civilite,
 			String phone, String email, String idType, String idNumber,
-			String profession, String raisonAchat, String lienParente,
+			String profession, int raisonAchat, String lienParente,
 			String nomUtilisateur, String prenomUtilisateur,
 			Date dateNaissanceUtilisateur, String professionUtilisateur,
 			Date dateNaissance, String villeUtilisateur,
@@ -259,11 +259,11 @@ public class Customer implements java.io.Serializable {
 	}
 
 	@Column(name = "raison_achat", length = 45)
-	public String getRaisonAchat() {
+	public int getRaisonAchat() {
 		return this.raisonAchat;
 	}
 
-	public void setRaisonAchat(String raisonAchat) {
+	public void setRaisonAchat(int raisonAchat) {
 		this.raisonAchat = raisonAchat;
 	}
 

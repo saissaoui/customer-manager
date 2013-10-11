@@ -3,9 +3,14 @@ package tn.tunisiana.customer.shared.model;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class CustomerDto implements Serializable {
 
 	private Integer idcustomer;
+	
+	@NotNull
 	private String name;
 	private String lastname;
 	private Integer age;
@@ -13,6 +18,7 @@ public class CustomerDto implements Serializable {
 	private String adress;
 	private String country;
 	private String civilite;
+	@Size(max=8, min=8)
 	private String phone;
 	private String email;
 	private String idType;

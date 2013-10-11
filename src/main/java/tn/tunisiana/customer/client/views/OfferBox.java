@@ -27,12 +27,14 @@ public class OfferBox extends DialogBox implements HasText {
 	Button close;
 	@UiField
 	StackPanel offersStack;
-
+	@UiField
+	Label errorMessage;
 	interface OfferBoxUiBinder extends UiBinder<Widget, OfferBox> {
 	}
 
 	public OfferBox(List<OfferDto> _offers) {
 
+		if(offers!= null){
 		this.offers = _offers;
 		setWidget(uiBinder.createAndBindUi(this));
 		this.center();
@@ -40,6 +42,12 @@ public class OfferBox extends DialogBox implements HasText {
 		for (OfferDto offer : offers)
 			offersStack.add(new OfferInfos(offer),offer.getOfferName());
 	}
+		else {
+			setWidget(uiBinder.createAndBindUi(this));
+			offersStack.setVisible(false);
+			errorMessage.setVisible(true);
+		}
+		}
 
 	public OfferBox(String firstName) {
 

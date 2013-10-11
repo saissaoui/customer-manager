@@ -1,14 +1,11 @@
 package tn.tunisiana.customer.client.views;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
+
+import javax.validation.ConstraintViolation;
+import javax.validation.Validator;
 
 import tn.tunisiana.customer.client.services.IConfManagerService;
 import tn.tunisiana.customer.client.services.IConfManagerServiceAsync;
@@ -23,21 +20,26 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.FlexTable;
+import com.google.gwt.user.client.ui.FlexTable.FlexCellFormatter;
 import com.google.gwt.user.client.ui.HasText;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.RadioButton;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
+import com.google.gwt.validation.client.impl.Validation;
 
 //import tn.tunisiana.customer.client.services.CustomerManagerService;
 
 public class CustomerForm extends Composite implements HasText {
 
 	private CustomerDto customer = new CustomerDto();
-
+	@UiField
+	final FlexTable table = new FlexTable();
 	@UiField
 	Button button;
 
@@ -92,6 +94,8 @@ public class CustomerForm extends Composite implements HasText {
 	public CustomerForm() {
 		initWidget(uiBinder.createAndBindUi(this));
 		// birthday = new DatePickerWithYearSelector();
+		FlexCellFormatter cellFormatter = table.getFlexCellFormatter();
+
 		final List<String> gouvsList = null;
 		confService.getGouvernorats(new AsyncCallback<List<String>>() {
 
@@ -133,22 +137,42 @@ public class CustomerForm extends Composite implements HasText {
 	private void evaluateCustomer() {
 		updateCustomer();
 
-		offerService.getOffersFor(customer,
-				new AsyncCallback<List<OfferDto>>() {
+		// validation des données
+		Validator validator = Validation.buildDefaultValidatorFactory()
+				.getValidator();
+		Set<ConstraintViolation<CustomerDto>> violations = validator
+				.validate(customer);
+		if (!violations.isEmpty()) {
 
-					public void onSuccess(List<OfferDto> offres) {
-						OfferBox ob = new OfferBox(offres);
-						ob.show();
-						System.out.println("nombre offres " + offres.size());
+			StringBuilder builder = new StringBuilder();
+			for (ConstraintViolation<CustomerDto> violation : violations) {
+				builder.append(violation.getMessage());
+				builder.append(" : <i>(");
+				builder.append(violation.getPropertyPath().toString());
+				builder.append(" = ");
+				builder.append("" + violation.getInvalidValue());
+				builder.append(")</i>");
+				builder.append("<br/>");
+			}
+			// Affiche un message d'erreur avec les contraintes non respectées
+			Window.alert("Contraintes non respectées !" + builder.toString());
+		} else {
 
-					}
+			offerService.getOffersFor(customer,
+					new AsyncCallback<List<OfferDto>>() {
 
-					public void onFailure(Throwable arg0) {
-						System.out.println("failure");
+						public void onSuccess(List<OfferDto> offres) {
+							OfferBox ob = new OfferBox(offres);
+							ob.show();
 
-					}
-				});
+						}
 
+						public void onFailure(Throwable arg0) {
+							System.out.println("failure");
+
+						}
+					});
+		}
 		// custoSrv.getOffer(new AsyncCallback<Offer>() {
 		// public void onFailure(Throwable caught) {
 		// // Show the RPC error message to the user
@@ -202,8 +226,8 @@ public class CustomerForm extends Composite implements HasText {
 		customer.setName(nom.getText());
 		customer.setLastname(prenom.getText());
 		customer.setAge(calculateAge());
-		 customer.setGouvernorat(gouvernorat.getItemText(gouvernorat
-		 .getSelectedIndex()));
+		customer.setGouvernorat(gouvernorat.getItemText(gouvernorat
+				.getSelectedIndex()));
 		customer.setAdress(adresse.getText());
 		customer.setCountry(nationalite.getText());
 		customer.setPhone(tel.getText());

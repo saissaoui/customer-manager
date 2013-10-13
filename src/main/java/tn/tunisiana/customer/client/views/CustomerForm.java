@@ -38,8 +38,7 @@ import com.google.gwt.validation.client.impl.Validation;
 public class CustomerForm extends Composite implements HasText {
 
 	private CustomerDto customer = new CustomerDto();
-	@UiField
-	final FlexTable table = new FlexTable();
+
 	@UiField
 	Button button;
 
@@ -93,8 +92,7 @@ public class CustomerForm extends Composite implements HasText {
 
 	public CustomerForm() {
 		initWidget(uiBinder.createAndBindUi(this));
-		// birthday = new DatePickerWithYearSelector();
-		FlexCellFormatter cellFormatter = table.getFlexCellFormatter();
+		// birthday = new DatePickerWithYearSelector();FlexCellFormatter cellFormatter = table.getFlexCellFormatter();
 
 		final List<String> gouvsList = null;
 		confService.getGouvernorats(new AsyncCallback<List<String>>() {

@@ -38,6 +38,7 @@ public class OfferBox extends DialogBox implements HasText {
 		this.offers = _offers;
 		setWidget(uiBinder.createAndBindUi(this));
 		this.center();
+		this.setWidth("500px");
 		this.setAnimationEnabled(true);
 		for (OfferDto offer : offers)
 			offersStack.add(new OfferInfos(offer),offer.getOfferName());

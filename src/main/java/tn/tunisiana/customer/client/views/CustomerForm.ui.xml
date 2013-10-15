@@ -6,8 +6,14 @@
 		.important {
 			font-weight: bold;
 		}
+		
+		.gwt-Label {
+			font-weight: bold;
+		}
 	</ui:style>
 	<g:HTMLPanel styleName="{style.htmlPannel}">
+	<g:Button styleName="{style.important}" ui:field="button"
+			text="Valider" />
 		<g:Grid>
 			<g:row>
 				<g:customCell>
@@ -15,7 +21,7 @@
 				</g:customCell>
 				<g:customCell>
 
-					<g:TextBox textAlignment="ALIGN_RIGHT" ui:field="nom" />
+					<g:TextBox ui:field="nom" />
 				</g:customCell>
 			</g:row>
 			<g:row>
@@ -33,7 +39,7 @@
 					<g:Label text="Nationalité" width="120px" />
 				</g:customCell>
 				<g:customCell>
-					<g:TextBox ui:field="nationalite" />
+					<g:ListBox visibleItemCount="1" ui:field="nationalite" />
 				</g:customCell>
 			</g:row>
 			<g:row>
@@ -51,7 +57,7 @@
 				<g:customCell>
 					<g:RadioButton name="civilite" ui:field="mlle" text="Mlle" />
 				</g:customCell>
-				
+
 			</g:row>
 			<g:row>
 				<g:customCell>
@@ -150,22 +156,22 @@
 			<g:row>
 				<g:customCell>
 					<g:Label text="Proféssion" width="120px" />
-					</g:customCell>
-					<g:customCell>
+				</g:customCell>
+				<g:customCell>
 					<g:RadioButton name="profession" ui:field="sal" text="Salarié" />
-					</g:customCell>
-					<g:customCell>
+				</g:customCell>
+				<g:customCell>
 					<g:RadioButton name="profession" ui:field="liberal"
 						text="Proféssion Libérale" />
-						</g:customCell>
-					<g:customCell>
+				</g:customCell>
+				<g:customCell>
 					<g:RadioButton name="profession" ui:field="etudiant"
 						text="Etudiant" />
-						</g:customCell>
-					<g:customCell>
+				</g:customCell>
+				<g:customCell>
 					<g:Label text="Autre" width="120px" />
-					</g:customCell>
-					<g:customCell>
+				</g:customCell>
+				<g:customCell>
 
 					<g:TextBox ui:field="autreProfession" />
 				</g:customCell>
@@ -375,8 +381,7 @@
 				</g:customCell>
 			</g:row>
 		</g:Grid>
-		<g:Button styleName="{style.important}" ui:field="button"
-			text="Valider" />
+		
 	</g:HTMLPanel>
 </ui:UiBinder> 
 

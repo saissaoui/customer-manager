@@ -45,13 +45,13 @@ public class CustomerForm extends Composite implements HasText {
 	@UiField
 	DatePickerWithYearSelector birthday, birthdayUtilisateur;
 	@UiField
-	TextBox nom, prenom, nationalite, tel, email, numId, adresse, ville,
+	TextBox nom, prenom,  tel, email, numId, adresse, ville,
 			postcode, autreProfession, nomUtilisateur, prenomUtilisateur,
 			nationaliteUtilisateur, adresseUtilisateur, villeUtilisateur,
 			postCodeUtilisateur, AutreRaison;
 
 	@UiField
-	ListBox gouvernorat, operateur, gouvernoratUtilisateur;
+	ListBox gouvernorat, operateur, gouvernoratUtilisateur,nationalite;
 
 	@UiField
 	RadioButton
@@ -95,8 +95,14 @@ public class CustomerForm extends Composite implements HasText {
 		// birthday = new DatePickerWithYearSelector();FlexCellFormatter cellFormatter = table.getFlexCellFormatter();
 
 		final List<String> gouvsList = null;
+		
+		nationalite.addItem("Tunisiene");
+		nationalite.addItem("Autre");
 		confService.getGouvernorats(new AsyncCallback<List<String>>() {
-
+			
+		
+			
+			
 			public void onSuccess(List<String> gouvs) {
 				if (gouvs != null) {
 					for (String gouv : gouvs) {
@@ -227,7 +233,8 @@ public class CustomerForm extends Composite implements HasText {
 		customer.setGouvernorat(gouvernorat.getItemText(gouvernorat
 				.getSelectedIndex()));
 		customer.setAdress(adresse.getText());
-		customer.setCountry(nationalite.getText());
+		customer.setCountry((nationalite.getItemText(nationalite
+				.getSelectedIndex())));
 		customer.setPhone(tel.getText());
 		customer.setEmail(email.getText());
 		customer.setIdNumber(numId.getText());
@@ -238,6 +245,7 @@ public class CustomerForm extends Composite implements HasText {
 		customer.setVilleUtilisateur(villeUtilisateur.getText());
 		// customer.setCodePostalUtilisateur(Long.parseLong(postCodeUtilisateur
 		// .getText()));
+		
 		customer.setCodePostal(Long.parseLong(postcode.getText()));
 
 	}

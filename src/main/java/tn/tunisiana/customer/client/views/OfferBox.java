@@ -33,18 +33,20 @@ public class OfferBox extends DialogBox implements HasText {
 	}
 
 	public OfferBox(List<OfferDto> _offers) {
-
-		if(offers!= null){
-		this.offers = _offers;
-		setWidget(uiBinder.createAndBindUi(this));
+		
 		this.center();
-		this.setWidth("500px");
-		this.setAnimationEnabled(true);
+		//this.setWidth("395px");
+	
+		setWidget(uiBinder.createAndBindUi(this));
+		if(_offers!= null){
+		this.offers = _offers;
+		
+		
 		for (OfferDto offer : offers)
 			offersStack.add(new OfferInfos(offer),offer.getOfferName());
 	}
 		else {
-			setWidget(uiBinder.createAndBindUi(this));
+			
 			offersStack.setVisible(false);
 			errorMessage.setVisible(true);
 		}

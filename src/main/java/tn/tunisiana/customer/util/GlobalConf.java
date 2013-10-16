@@ -4,10 +4,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.Scanner;
 
 public class GlobalConf {
 	static Properties properties = new Properties();
@@ -15,7 +15,7 @@ public class GlobalConf {
 	static {
 		try {
 			System.out.println(System.getProperty("user.dir"));
-			properties.load(new FileInputStream("conf\\global.properties"));
+			properties.load(new FileInputStream("conf/global.properties"));
 
 		} catch (IOException ex) {
 			ex.printStackTrace();
@@ -33,11 +33,16 @@ public class GlobalConf {
 	}
 
 	public static List<String> getGouvernorats() {
-		File gouvs = new File("conf\\gouvern.txt");
-		List<String> gouvsList = null;
+		File gouvs = new File("conf/gouvern.txt");
+		List<String> gouvsList = new ArrayList<String>();
 		try {
-			gouvsList = Files.readAllLines(gouvs.toPath(),
-					Charset.defaultCharset());
+			Scanner s = new Scanner(gouvs);
+
+			while (s.hasNext()) {
+				gouvsList.add(s.next());
+			}
+			s.close();
+
 		} catch (FileNotFoundException e) {
 
 			e.printStackTrace();

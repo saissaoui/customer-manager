@@ -5,13 +5,16 @@
 		.important {
 			font-weight: bold;
 		}
+		
+		
 	</ui:style>
 
-	<g:HTMLPanel width="500" height="300">
-	
-		<g:StackPanel ui:field="offersStack"></g:StackPanel>
+	<g:HTMLPanel  styleName="offers">
+
+		<g:StackPanel width="300" ui:field="offersStack"></g:StackPanel>
 		<g:Label ui:field="offerLabel"></g:Label>
-		<g:Label visible="false" ui:field="errorMessage" text="Pas d'offres pour ce client"></g:Label>
+		<g:Label visible="false" ui:field="errorMessage"
+			text="Pas d'offres pour ce client"></g:Label>
 		<g:Button ui:field="close" text="fermer"></g:Button>
 
 

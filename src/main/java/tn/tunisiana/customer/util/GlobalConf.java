@@ -1,9 +1,9 @@
 package tn.tunisiana.customer.util;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -12,10 +12,16 @@ import java.util.Scanner;
 public class GlobalConf {
 	static Properties properties = new Properties();
 	private static String localisation;
+	private static ClassLoader loader;
 	static {
 		try {
-			System.out.println(System.getProperty("user.dir"));
-			properties.load(new FileInputStream("conf/global.properties"));
+			loader = GlobalConf.class.getClassLoader();
+			if (loader == null)
+				loader = ClassLoader.getSystemClassLoader();
+
+			String propFile = "conf/global.properties";
+			java.net.URL url = loader.getResource(propFile);
+			properties.load(url.openStream());
 
 		} catch (IOException ex) {
 			ex.printStackTrace();
@@ -33,9 +39,14 @@ public class GlobalConf {
 	}
 
 	public static List<String> getGouvernorats() {
-		File gouvs = new File("conf/gouvern.txt");
+		String propFile = "conf/gouvern.txt";
+		java.net.URL url = loader.getResource(propFile);
 		List<String> gouvsList = new ArrayList<String>();
+
+		File gouvs;
 		try {
+			gouvs = new File(url.toURI());
+
 			Scanner s = new Scanner(gouvs);
 
 			while (s.hasNext()) {
@@ -46,11 +57,10 @@ public class GlobalConf {
 		} catch (FileNotFoundException e) {
 
 			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (URISyntaxException e1) {
+
+			e1.printStackTrace();
 		}
 		return gouvsList;
 	}
-
 }

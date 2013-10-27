@@ -1,5 +1,6 @@
 package tn.tunisiana.customer.client.views;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -45,13 +46,13 @@ public class CustomerForm extends Composite implements HasText {
 	@UiField
 	DatePickerWithYearSelector birthday, birthdayUtilisateur;
 	@UiField
-	TextBox nom, prenom,  tel, email, numId, adresse, ville,
-			postcode, autreProfession, nomUtilisateur, prenomUtilisateur,
+	TextBox nom, prenom, tel, email, numId, adresse, ville, postcode,
+			autreProfession, nomUtilisateur, prenomUtilisateur,
 			nationaliteUtilisateur, adresseUtilisateur, villeUtilisateur,
 			postCodeUtilisateur, AutreRaison;
 
 	@UiField
-	ListBox gouvernorat, operateur, gouvernoratUtilisateur,nationalite;
+	ListBox gouvernorat, operateur, gouvernoratUtilisateur, nationalite;
 
 	@UiField
 	RadioButton
@@ -92,17 +93,15 @@ public class CustomerForm extends Composite implements HasText {
 
 	public CustomerForm() {
 		initWidget(uiBinder.createAndBindUi(this));
-		// birthday = new DatePickerWithYearSelector();FlexCellFormatter cellFormatter = table.getFlexCellFormatter();
+		// birthday = new DatePickerWithYearSelector();FlexCellFormatter
+		// cellFormatter = table.getFlexCellFormatter();
 
 		final List<String> gouvsList = null;
-		
+
 		nationalite.addItem("Tunisiene");
 		nationalite.addItem("Autre");
 		confService.getGouvernorats(new AsyncCallback<List<String>>() {
-			
-		
-			
-			
+
 			public void onSuccess(List<String> gouvs) {
 				if (gouvs != null) {
 					for (String gouv : gouvs) {
@@ -140,65 +139,77 @@ public class CustomerForm extends Composite implements HasText {
 
 	private void evaluateCustomer() {
 		updateCustomer();
-
+/*
+		List<OfferDto> offres = new ArrayList<OfferDto>();
+		offres.add(new OfferDto(1, "carta klem",
+				"Avec la nouvelle tarification de Carta Klem, "));
+		offres.add(new OfferDto(2, "carta plus",
+				"Pas d’abonnement, pas de facture et le contrô"));
+		offres.add(new OfferDto(3, "amigos",
+				"Parce que la vie d’un jeune est faite de part"));
+		offres.add(new OfferDto(4, "forfait",
+				"Avec « Forfait », la nouvelle ligne à facture"));
+		OfferBox ob = new OfferBox(offres);
+		ob.show();
+	*/
 		// validation des données
-		Validator validator = Validation.buildDefaultValidatorFactory()
-				.getValidator();
-		Set<ConstraintViolation<CustomerDto>> violations = validator
-				.validate(customer);
-		if (!violations.isEmpty()) {
+//		 Validator validator = Validation.buildDefaultValidatorFactory()
+//		 .getValidator();
+//		 Set<ConstraintViolation<CustomerDto>> violations = validator
+//		 .validate(customer);
+//		 if (!violations.isEmpty()) {
+//		
+//		 StringBuilder builder = new StringBuilder();
+//		 for (ConstraintViolation<CustomerDto> violation : violations) {
+//		 builder.append(violation.getMessage());
+//		 builder.append(" : <i>(");
+//		 builder.append(violation.getPropertyPath().toString());
+//		 builder.append(" = ");
+//		 builder.append("" + violation.getInvalidValue());
+//		 builder.append(")</i>");
+//		 builder.append("<br/>");
+//		 }
+//		 // Affiche un message d'erreur avec les contraintes non respectées
+//		 Window.alert("Contraintes non respectées !" + builder.toString());
+//		 } else {
 
-			StringBuilder builder = new StringBuilder();
-			for (ConstraintViolation<CustomerDto> violation : violations) {
-				builder.append(violation.getMessage());
-				builder.append(" : <i>(");
-				builder.append(violation.getPropertyPath().toString());
-				builder.append(" = ");
-				builder.append("" + violation.getInvalidValue());
-				builder.append(")</i>");
-				builder.append("<br/>");
-			}
-			// Affiche un message d'erreur avec les contraintes non respectées
-			Window.alert("Contraintes non respectées !" + builder.toString());
-		} else {
-
-			offerService.getOffersFor(customer,
-					new AsyncCallback<List<OfferDto>>() {
-
-						public void onSuccess(List<OfferDto> offres) {
-							OfferBox ob = new OfferBox(offres);
-							ob.show();
-
-						}
-
-						public void onFailure(Throwable arg0) {
-							System.out.println("failure");
-
-						}
-					});
-		}
-		// custoSrv.getOffer(new AsyncCallback<Offer>() {
-		// public void onFailure(Throwable caught) {
-		// // Show the RPC error message to the user
-		// // dialogBox.setText("Remote Procedure Call - Failure");
-		// // serverResponseLabel.addStyleName("serverResponseLabelError");
-		// // serverResponseLabel.setHTML(SERVER_ERROR);
-		// // dialogBox.center();
-		// // closeButton.setFocus(true);
-		// System.out.println("failure");
-		// }
-		//
-		// public void onSuccess(Offer result) {
-		// // dialogBox.setText("Remote Procedure Call");
-		// // serverResponseLabel.removeStyleName("serverResponseLabelError");
-		// // serverResponseLabel.setHTML(result);
-		// // dialogBox.center();
-		// // closeButton.setFocus(true);
-		// OfferBox ob = new OfferBox(result);
-		// ob.getDialogBox().show();
-		//
-		// }
-		// });
+		 offerService.getOffersFor(customer,
+		 new AsyncCallback<List<OfferDto>>() {
+		
+		 public void onSuccess(List<OfferDto> offres) {
+		 OfferBox ob = new OfferBox(offres);
+		 ob.show();
+		
+		 }
+		
+		 public void onFailure(Throwable arg0) {
+		 System.out.println("failure");
+		
+		 }
+		 });
+	//	 }
+//		 custoSrv.getOffer(new AsyncCallback<Offer>() {
+//		 public void onFailure(Throwable caught) {
+//		 // Show the RPC error message to the user
+//		 // dialogBox.setText("Remote Procedure Call - Failure");
+//		 // serverResponseLabel.addStyleName("serverResponseLabelError");
+//		 // serverResponseLabel.setHTML(SERVER_ERROR);
+//		 // dialogBox.center();
+//		 // closeButton.setFocus(true);
+//		 System.out.println("failure");
+//		 }
+//		
+//		 public void onSuccess(Offer result) {
+//		// // dialogBox.setText("Remote Procedure Call");
+//		// // serverResponseLabel.removeStyleName("serverResponseLabelError");
+//		// // serverResponseLabel.setHTML(result);
+//		// // dialogBox.center();
+//		// // closeButton.setFocus(true);
+//		 OfferBox ob = new OfferBox(result);
+//		 ob.getDialogBox().show();
+//		
+//		}
+//		 });
 	}
 
 	private int calculateAge() {
@@ -245,7 +256,7 @@ public class CustomerForm extends Composite implements HasText {
 		customer.setVilleUtilisateur(villeUtilisateur.getText());
 		// customer.setCodePostalUtilisateur(Long.parseLong(postCodeUtilisateur
 		// .getText()));
-		
+
 		customer.setCodePostal(Long.parseLong(postcode.getText()));
 
 	}

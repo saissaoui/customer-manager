@@ -9,13 +9,13 @@ import com.google.gwt.validation.client.AbstractGwtValidatorFactory;
 import com.google.gwt.validation.client.GwtValidation;
 import com.google.gwt.validation.client.impl.AbstractGwtValidator;
 
-public final class SimpleValidatorFactory extends AbstractGwtValidatorFactory {
+public final class SimpleValidatorFactory {//extends AbstractGwtValidatorFactory {
 
-	@GwtValidation(CustomerDto.class)
+	//@GwtValidation(CustomerDto.class)
 	public interface GwtValidator extends Validator {
 	}
 
-	@Override
+	//@Override
 	public AbstractGwtValidator createValidator() {
 		return GWT.create(GwtValidator.class);
 	}

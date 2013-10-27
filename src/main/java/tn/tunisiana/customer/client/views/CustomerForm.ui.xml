@@ -10,10 +10,16 @@
 		.gwt-Label {
 			font-weight: bold;
 		}
+		
+		.send{
+	
+	background-image: url("img/send.png");
+	margin-left: 300px;
+}
 	</ui:style>
 	<g:HTMLPanel styleName="{style.htmlPannel}">
-	<g:Button styleName="{style.important}" ui:field="button"
-			text="Valider" />
+	<g:Button   styleName="{style.send}" ui:field="button" width="121px" height="126px"
+			 />
 		<g:Grid>
 			<g:row>
 				<g:customCell>

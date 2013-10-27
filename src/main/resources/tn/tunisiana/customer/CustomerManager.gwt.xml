@@ -3,11 +3,11 @@
 	<!-- Inherit the core Web Toolkit stuff. -->
 	<inherits name='com.google.gwt.user.User' />
 
-	<inherits name="org.hibernate.validator.HibernateValidator" />
+	<!-- <inherits name="org.hibernate.validator.HibernateValidator" />
 	<replace-with
 		class="tn.tunisiana.customer.client.validation.SimpleValidatorFactory">
 		<when-type-is class="javax.validation.ValidatorFactory" />
-	</replace-with>
+	</replace-with> -->
 	<!-- We need the JUnit module in the main module, -->
 	<!-- otherwise eclipse complains (Google plugin bug?) -->
 	<inherits name='com.google.gwt.junit.JUnit' />

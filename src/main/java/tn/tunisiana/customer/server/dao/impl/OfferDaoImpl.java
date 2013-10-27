@@ -13,6 +13,15 @@ public class OfferDaoImpl implements IOfferDao {
 
 	Session session;
 
+	
+	
+	
+	
+	public OfferDaoImpl() {
+		session = HibernateUtil.getSessionFactory().openSession();
+
+	}
+
 	public void addOffer() {
 		// TODO Auto-generated method stub
 
@@ -35,12 +44,8 @@ public class OfferDaoImpl implements IOfferDao {
 
 	public List<Offer> listOffers(List<Integer> offers) {
 		
-		if (session == null||!session.isOpen()) {
-			session = HibernateUtil.getSessionFactory().openSession();
-
-		}
-
-		session.beginTransaction();
+		
+		session.getTransaction().begin();
 		Query query;
 		if(offers !=  null){
 			 query =  session.createQuery("from Offer where idoffer in (:idList)");
@@ -49,7 +54,7 @@ public class OfferDaoImpl implements IOfferDao {
 			 else
 			 query =  session.createQuery("from Offer");
 		
-		
+		session.getTransaction().commit();
 		List<Offer> list = (List<Offer>)query.list();
 		return list;
 

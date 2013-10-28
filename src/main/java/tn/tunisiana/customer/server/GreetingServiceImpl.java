@@ -1,7 +1,8 @@
 package tn.tunisiana.customer.server;
 
 import tn.tunisiana.customer.client.GreetingService;
-import tn.tunisiana.customer.shared.FieldVerifier;
+import tn.tunisiana.customer.client.services.FieldVerifier;
+
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**

@@ -11,6 +11,7 @@
 		<property name="hibernate.connection.url">jdbc:mysql://ec2-23-21-211-172.compute-1.amazonaws.com:3306/tunisianaDb</property>
 		<property name="hibernate.connection.username">tunisianaroot</property>
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="javax.persistence.validation.mode" >NONE</property>  
 		<property name="show_sql">true</property>
 		<mapping  class="tn.tunisiana.customer.server.model.Offer"  />
 	</session-factory>

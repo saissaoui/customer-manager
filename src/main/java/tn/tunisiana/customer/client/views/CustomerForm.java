@@ -99,6 +99,8 @@ public class CustomerForm extends Composite implements HasText {
 		final List<String> gouvsList = null;
 
 		nationalite.addItem("Tunisiene");
+		nationalite.addItem("Francaises");
+		
 		nationalite.addItem("Autre");
 		confService.getGouvernorats(new AsyncCallback<List<String>>() {
 
@@ -114,6 +116,7 @@ public class CustomerForm extends Composite implements HasText {
 
 			public void onFailure(Throwable arg0) {
 
+				Window.alert("Erreur de recuperation de la liste des gouvernorats");
 			}
 		});
 
@@ -139,7 +142,7 @@ public class CustomerForm extends Composite implements HasText {
 
 	private void evaluateCustomer() {
 		updateCustomer();
-/*
+
 		List<OfferDto> offres = new ArrayList<OfferDto>();
 		offres.add(new OfferDto(1, "carta klem",
 				"Avec la nouvelle tarification de Carta Klem, "));
@@ -151,7 +154,7 @@ public class CustomerForm extends Composite implements HasText {
 				"Avec « Forfait », la nouvelle ligne à facture"));
 		OfferBox ob = new OfferBox(offres);
 		ob.show();
-	*/
+	
 		// validation des données
 //		 Validator validator = Validation.buildDefaultValidatorFactory()
 //		 .getValidator();
@@ -173,7 +176,7 @@ public class CustomerForm extends Composite implements HasText {
 //		 Window.alert("Contraintes non respectées !" + builder.toString());
 //		 } else {
 
-		 offerService.getOffersFor(customer,
+	/*	 offerService.getOffersFor(customer,
 		 new AsyncCallback<List<OfferDto>>() {
 		
 		 public void onSuccess(List<OfferDto> offres) {
@@ -183,10 +186,11 @@ public class CustomerForm extends Composite implements HasText {
 		 }
 		
 		 public void onFailure(Throwable arg0) {
-		 System.out.println("failure");
+		Window.alert("Erreur de chargement des offres: "+arg0.getMessage());
 		
 		 }
 		 });
+		 */
 	//	 }
 //		 custoSrv.getOffer(new AsyncCallback<Offer>() {
 //		 public void onFailure(Throwable caught) {

@@ -3,6 +3,8 @@ package tn.tunisiana.customer.server.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import tn.tunisiana.customer.client.services.IOfferManagerService;
 import tn.tunisiana.customer.server.business.SegmentTester;
 import tn.tunisiana.customer.server.dao.impl.OfferDaoImpl;
@@ -26,16 +28,22 @@ public class OfferManagerServiceImpl extends RemoteServiceServlet implements
 	private SegmentTester segTester = new SegmentTester();
 	private SegmentsFileManager segFileMan = new SegmentsFileManager();
 	private OfferDaoImpl odi = new OfferDaoImpl();
+	private static final Logger logger = Logger
+			.getLogger(OfferManagerServiceImpl.class);
 
 	public List<OfferDto> getOffersFor(CustomerDto customer) {
-		
+
 		GeoCalculator gc = new GeoCalculator();
-		long distance = gc.distance(
-				customer.getGouvernorat(), GlobalConf.getLocalisation());
+		long distance = gc.distance(customer.getGouvernorat(),
+				GlobalConf.getLocalisation());
 		customer.setDistance(distance);
 
-		if (segTester.getSegments() == null)
+		if (segTester.getSegments() == null) {
+
+			System.out.println("offers "+segFileMan.getAllSegments().size());
 			segTester.setSegments(segFileMan.getAllSegments());
+
+		}
 		List<Integer> offers = segTester.defineOffers(new Customer(customer));
 		List<OfferDto> offerDtos = new ArrayList<OfferDto>();
 		if (offers.size() != 0) {

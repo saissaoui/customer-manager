@@ -1,4 +1,4 @@
-package tn.tunisiana.customer.shared;
+package tn.tunisiana.customer.client.services;
 
 /**
  * <p>

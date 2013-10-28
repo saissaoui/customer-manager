@@ -1,3 +1,4 @@
+package tn.tunisiana.customer.client.services;
 //package tn.tunisiana.customer.client.services;
 //
 //import com.google.gwt.user.client.rpc.RemoteService;
